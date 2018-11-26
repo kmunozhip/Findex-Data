@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543257508241.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "258015F4",
+    "lastKnownWriteTime" : 1543259495,
+    "last_content_update" : 1543259495028,
+    "path" : "~/investor-data/investor-script1.R",
+    "project_path" : "investor-script1.R",
+    "properties" : {
+        "cursorPosition" : "12,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
