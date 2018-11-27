@@ -64,7 +64,7 @@ p3 <- ggplot(asiaProviders, aes(country, freq)) +
   coord_flip()
 p3
 
-#Dummy Data Line Chart
+#Health Scatterplot
 asiaScatter <- read.csv("findex-data/final.csv", TRUE, sep =",")
 asiaScatter <- dplyr::rename(asiaScatter, country = ï..Country)
 asiaScatter <- dplyr::transmute(asiaScatter,
@@ -79,4 +79,9 @@ p4 <- ggplot(asiaScatter, aes(x=FB.Growth.Rate, y=IMR, color=LE.Rate)) +
   ggrepel::geom_label_repel(data=asiaScatter, 
     aes(label = asiaScatter$country), direction='both', color = 'black', nudge_x = 1.5)
 p4
-  
+
+#Financial Inclusion Chart 1
+findexChart1 <- subset(asiaFindex, X3 %in% 
+  c('Cambodia', 'Indonesia', 'Myanmar', 'Malaysia', 'Philippines', 'Thailand'))
+findexChart1 <- findexChart1[,c(1:29,770:781)]
+

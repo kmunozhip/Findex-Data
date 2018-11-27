@@ -1,24 +1,2 @@
-[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ha[0Kt[0Kt[0K[?25l$ git sat[0K[?25h[?25l$ git sa[0K[?25h[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-Changes not staged for commit:[0K
-  (use "git add <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/console06/72773897[0m[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31m.RData[0m[0K
-        [0;31m.Rproj.user/FDF398A4/sources/s-9E0707CA/[0m[0K
-        [0;31mfindex-data/final.csv[0m[0K
-        [0;31mfindex-data/provider_metrics.csv[0m[0K
-[0K
-no changes added to commit (use "git add" and/or "git commit -a")[0K
-[0K[?25h[?25l
-[0;32mKrashaldy Muñoz@LAPTOP-12DQPH01 [0;35m [0;33m~/Documents/investor-data[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l$ git add[0K[11G[?25h[?25l$ git add '[0K[?25hf[0Ki[0Kn[0Kd[0Ke[0Kx[0K-[0Kd[0Ka[0Kt[0Ka[0K/[0Kf[0Ki[0Kn[0Ka[0Kl[0K.[0Kc[0Ks[0Kv[0K'[0K[?25l
-[0K[?25h[?25l
-[0;32mKrashaldy Muñoz@LAPTOP-12DQPH01 [0;35m [0;33m~/Documents/investor-data[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[7G[?25h[8G[?25l$ git ad[0K[?25hd[0K[11G[?25l$ git add '[0K[?25hf[0Ki[0Kn[0Kd[0Ke[0Kx[0K-[0Kd[0Ka[0Kt[0Ka[0K[?25l$ git add 'findex-dat[0K[?25h[?25l$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25ha[0Km[0K[18G[?25l$ git commit -am "[0K[?25hS[0Kt[0Ka[0Kr[0Kt[0Ke[0Kd[0K[27G[?25l$ git commit -am "Started F[0K[?25hi[0Kn[0Ka[0Kn[0Kc[0Ki[0Ka[0Kl[0K[37G[?25l$ git commit -am "Started Financial I[0K[?25hn[0Kl[0Kc[0K[?25lu[0K[41G[?25h[42G[?25l$ git commit -am "Started Financial Inlcus[0K[?25h[?25l$ git commit -am "Started Financial Inlcu[0K[?25h[?25l$ git commit -am "Started Financial Inlc[0K[?25h[?25l$ git commit -am "Started Financial Inl[0K[?25h[?25l$ git commit -am "Started Financial In[0K[?25hc[0Kl[0Ku[0Ks[0Ki[0Ko[0Kn[0K[47G[?25l$ git commit -am "Started Financial Inclusion c[0K[?25hh[0Ka[0Kr[0Kt[0K[53G[52G[?25l$ git commit -am "Started Financial Inclusion char[0K[?25h[?25l$ git commit -am "Started Financial Inclusion cha[0K[?25h[?25l$ git commit -am "Started Financial Inclusion ch[0K[?25h[?25l$ git commit -am "Started Financial Inclusion c[0K[?25h[?25l$ git commit -am "Started Financial Inclusion[0K[47G[?25h[46G[?25l$ git commit -am "Started Financial Inclusio[0K[?25h[?25l$ git commit -am "Started Financial Inclus[0K[?25h[?25l$ git commit -am "Started Financial Inclu[0K[?25h[?25l$ git commit -am "Started Financial Inc[0K[?25h[?25l$ git commit -am "Started Financial I[0K[?25h[?25l$ git commit -am "Started Financial[0K[37G[?25h[36G[?25l$ git commit -am "Started Financia[0K[?25h[?25l$ git commit -am "Started Financi[0K[?25h[?25l$ git commit -am "Started Financ[0K[?25h[?25l$ git commit -am "Started Finan[0K[?25h[?25l$ git commit -am "Started Fina[0K[?25h[?25l$ git commit -am "Started Fin[0K[?25h[?25l$ git commit -am "Started Fi[0K[?25h[?25l$ git commit -am "Started F[0K[?25h[?25l$ git commit -am "Started[0K[27G[?25h[26G[27G[?25l$ git commit -am "Started f[0K[?25hi[0Kr[0Ks[0Kt[0K[33G[?25l$ git commit -am "Started first f[0K[?25hi[0Kn[0Ka[0Kn[0Kc[0Ki[0Ka[0Kl[0K[43G[?25l$ git commit -am "Started first financial i[0K[?25hn[0Kc[0Kl[0Ku[0Ks[0Ki[0Ko[0Kn[0K[53G[?25l$ git commit -am "Started first financial inclusion c[0K[?25hh[0Ka[0Kr[0Kt[0K"[0K[?25l
 [0K[?25h
