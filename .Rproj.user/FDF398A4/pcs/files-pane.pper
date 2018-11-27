@@ -1,5 +1,5 @@
 {
-    "path" : "~/investor-data",
+    "path" : "~/investor-data/findex-data",
     "sortOrder" : [
         {
             "ascending" : true,
