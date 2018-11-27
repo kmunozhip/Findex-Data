@@ -1,0 +1,385 @@
+the_geom,continent,country,provider,dist,fr
+,Africa,Algeria,ADE,890.478,5.90162754897028
+,Africa,Algeria,Algeria Telecom,9304.29400000001,5.011822771281
+,Africa,Algeria,Djezzy,1460.361,21.8026178367436
+,Africa,Algeria,SNTF,4662.975,22.3133697351441
+,Africa,Algeria,Sonatrach,5519.587,10.3930798349902
+,Africa,Angola,Angola Telecom,7359.959,75.7512575238943
+,Africa,Angola,Multitel,7359.959,75.1162084555253
+,Africa,Angola,Unitel,9592.608,54.815220114775
+,Africa,Benin,Benin Telecom,2596.066,21.8470978308469
+,Africa,Benin,Phase 3 Telecom,1182.394,43.6253610663116
+,Africa,Botswana,BOFINET,8293.096,12.9251874880865
+,Africa,Botswana,BTC,5545.761,30.0678639849648
+,Africa,Botswana,Liquid Telecom,509.395,47.4347590319812
+,Africa,Botswana,Mascom,6061.545,62.0957440594211
+,Africa,Botswana,Orange,5545.083,46.9610543493181
+,Africa,Burkina Faso,Onatel,1219.162,12.6187365585938
+,Africa,Burkina Faso,Orange Burkina Faso,1061.964,56.7838405808434
+,Africa,Burkina Faso,SITARAIL,520.58,56.861350260675
+,Africa,Burkina Faso,SONABEL,284.909,4.70499872136861
+,Africa,Burkina Faso,TBD,3268.55,71.6949875317514
+,Africa,Burkina Faso,Telecel,1061.964,7.35451311711222
+,Africa,Burkina Faso,Telmob,1061.964,85.4866448128596
+,Africa,Burundi,Africell,1230.618,57.4550945255905
+,Africa,Burundi,CBINET Burundi,1230.618,76.8824048703536
+,Africa,Burundi,Liquid Telecom,400.551,38.7794990316033
+,Africa,Burundi,Onatel,1230.618,60.405534081161
+,Africa,Burundi,U-COM Burundi,1230.618,54.8137009367347
+,Africa,Cameroon,Camrail,880.204,8.48145672958344
+,Africa,Cameroon,Camtel,7913.229,52.4257217850536
+,Africa,Cameroon,Eneo,651.679,30.5717980433255
+,Africa,Cape Verde,CV Telecom,517.366,21.1162344729528
+,Africa,Central African Republic,Orange,937.362,57.3273493340239
+,Africa,Central African Republic,SOCATEL,4725.173,34.5836208146065
+,Africa,Chad,SOTEL,1056.986,41.9188523096964
+,Africa,Chad,TBD,1612.895,78.6407191110775
+,Africa,Cote dIvoire,MOOV,2441.258,43.9767006495968
+,Africa,Cote dIvoire,MTN,3572.195,26.6701098755002
+,Africa,Cote dIvoire,Orange,3623.049,62.7569275666028
+,Africa,Cote dIvoire,RNHD,7316.799,7.79192080628127
+,Africa,Cote dIvoire,SITARAIL,640.613,47.5172077063471
+,Africa,Democratic Republic of the Congo,Airtel,3445.64,15.3822886329144
+,Africa,Democratic Republic of the Congo,Liquid Telecom,1892.024,19.7171082943678
+,Africa,Democratic Republic of the Congo,Orange,14696.669,76.5850716913119
+,Africa,Democratic Republic of the Congo,SCPT,14696.67,61.8170477068052
+,Africa,Democratic Republic of the Congo,SNEL,1892.024,80.8128523537889
+,Africa,Democratic Republic of the Congo,SOCOF,3462.659,32.54612604063
+,Africa,Democratic Republic of the Congo,Tigo,14.019,73.435784265399
+,Africa,Democratic Republic of the Congo,Vodacom,3445.64,46.5966929765418
+,Africa,Egypt,EETC,3886.444,88.407476301305
+,Africa,Egypt,ENR,571.929,77.1407830286771
+,Africa,Egypt,Telecom Egypt,7610.483,27.2916805082932
+,Africa,Ethiopia,Ethio Telecom,14850.632,4.76198941841722
+,Africa,Gabon,TBD,939.537,71.6274278415367
+,Africa,Gambia,Gamtel,879.949,83.7467750338838
+,Africa,Gambia,GERMP,26.962,80.6443942887709
+,Africa,Gambia,OMVG,174.334,19.40692687314
+,Africa,Ghana,Airtel,780.634,53.1523091150448
+,Africa,Ghana,CSquared,847.877999999998,44.458095267415
+,Africa,Ghana,Glo,2760.55,26.888383644633
+,Africa,Ghana,Gridco,5065.185,14.5780309000984
+,Africa,Ghana,MTN,2256.623,74.0298933107406
+,Africa,Ghana,Tigo,1268.938,47.0046181175858
+,Africa,Ghana,Vodafone,3648.616,70.9053802760318
+,Africa,Guinea,OMVG,1731.845,17.6135141672567
+,Africa,Guinea,SOGEB,3562.376,87.9234704272822
+,Africa,Guinea-Bissau,TBD,295.498,58.5460993871093
+,Africa,Kenya,Bandwith and Cloud Services,2532.514,60.5902148168534
+,Africa,Kenya,Jamii Telecom,2822.064,23.5935803027824
+,Africa,Kenya,KPLC,1454.797,30.3030269537121
+,Africa,Kenya,Liquid Telecom,4803.962,67.3821356231347
+,Africa,Kenya,NOFBI,5339.651,70.1107880091295
+,Africa,Kenya,Safaricom,4629.729,44.6853155866265
+,Africa,Kenya,SimbaNET,319.592,86.099243959412
+,Africa,Kenya,Telkom Kenya,6361.483,55.6958597004414
+,Africa,Kenya,Wanachi Group,478.025,15.5023632934317
+,Africa,Lesotho,Lesotho Electricity Company,1648.252,75.9120963132009
+,Africa,Lesotho,Vodacom,1648.25,87.2419857829809
+,Africa,Liberia,Cellcom,638.392,87.9381476007402
+,Africa,Liberia,Libtelco,1028.405,31.5087892897427
+,Africa,Liberia,MTN,638.392,84.6494620842859
+,Africa,Libya,Agoco,2059.311,74.0789306294173
+,Africa,Libya,Eni,586.349,57.8004697980359
+,Africa,Libya,GECOL (National Electricity Provider),5346.087,88.4114515446126
+,Africa,Libya,Great Man-Made River Project Authority,4099.314,54.706358470954
+,Africa,Libya,LPTIC,9747.742,50.5472448738292
+,Africa,Libya,Repsol,523.811,78.0558458333835
+,Africa,Libya,Sirte Oil Company,176.133,73.1132853860036
+,Africa,Madagascar,Airtel,7119.83000000001,12.699553988874
+,Africa,Madagascar,Orange,7117.55400000003,31.5139411007985
+,Africa,Madagascar,Telma,7117.16900000002,9.00166903063655
+,Africa,Malawi,Airtel,583.966,26.2775849308819
+,Africa,Malawi,ESCOM,2028.237,14.5438344534487
+,Africa,Malawi,MTL,1893.071,55.0062871482223
+,Africa,Malawi,SimbaNET,838.566,6.18296520691365
+,Africa,Malawi,Skyband,1265.846,31.1573486207053
+,Africa,Mali,Orange,2636.046,51.9297575755045
+,Africa,Mali,SOGEM-OMVS,442.651,63.7290645940229
+,Africa,Mali,Sotelma,2133.265,90.7475634375587
+,Africa,Mali,TBD,2177.359,74.5233379201964
+,Africa,Mauritania,Mauritel,1689.974,3.03209154773504
+,Africa,Mauritania,SNIM,650.928,67.1296991026029
+,Africa,Mauritania,SOGEM-OMVS,326.733,53.6341259293258
+,Africa,Mauritania,TBD,1546.869,46.7174071343616
+,Africa,Mauritius,CEB,330.994,62.2289430620149
+,Africa,Mauritius,Emtel,138.525,18.3299856716767
+,Africa,Morocco,Autoroutes de Maroc,1594.952,61.2197704697028
+,Africa,Morocco,Finetis Maroc,2013.865,47.1410393752158
+,Africa,Morocco,INWI,6422.22799999999,14.5719714546576
+,Africa,Morocco,Maroc Telecom,10808.9660000003,58.157918070443
+,Africa,Morocco,National Office of Electricity and Water (ONEE),5531.34200000001,77.649828706868
+,Africa,Morocco,National Railroad Office (ONCF),1844.249,8.22143353894353
+,Africa,Morocco,Orange,5070.624,41.2368486998603
+,Africa,Mozambique,EDM,5715.3,44.4502985049039
+,Africa,Mozambique,Movitel,5101.716,5.63288508355618
+,Africa,Mozambique,TDM,9312.29,4.94320717081428
+,Africa,Mozambique,Vodacom,9266.745,3.9975433787331
+,Africa,Namibia,NamPower,1488.698,82.6887309588492
+,Africa,Namibia,Paratus Telecom,901.641,77.0564925568178
+,Africa,Namibia,Telecom Namibia,10267.399,15.6970974095166
+,Africa,Niger,Niger Telecom,4105.1,23.2026720596477
+,Africa,Niger,Phase3 Telecom,229.696,85.0581615874544
+,Africa,Nigeria,Airtel,3918.981,40.9746823403984
+,Africa,Nigeria,BCN,87.144,36.7465065130964
+,Africa,Nigeria,Galaxy Backbone,1443.946,49.0644487356767
+,Africa,Nigeria,Globacom,4425.487,46.1576475473121
+,Africa,Nigeria,ipNX,160.245,66.9038551338017
+,Africa,Nigeria,MainOne,177.835,9.9942063530907
+,Africa,Nigeria,MTN,16807.917,18.886712141335
+,Africa,Nigeria,Multi-Links,6727.64399999999,66.6514186132699
+,Africa,Nigeria,ntel,1069.637,83.5175442732871
+,Africa,Nigeria,Phase3 Telecom,7487.086,20.91880368907
+,Africa,Nigeria,Starcomms,1745.463,42.7811177158728
+,Africa,Nigeria,Suburban Telecoms,81.429,46.1516702026129
+,Africa,Republic of Congo,Central African Backbone,1012.402,66.6362108234316
+,Africa,Republic of Congo,Congo Telecom,2361.102,14.0100607778877
+,Africa,Rwanda,Airtel,1511.301,63.4816558742896
+,Africa,Rwanda,BSC,1511.301,36.8559812931344
+,Africa,Rwanda,Liquid Telecom,1234.373,60.1511001531035
+,Africa,Rwanda,MTN,1511.301,77.0536273289472
+,Africa,Rwanda,Tigo,1511.301,4.01389936357737
+,Africa,Senegal,ADIE,3136.347,46.8009288599715
+,Africa,Senegal,Mauritel,33.376,84.2750609098002
+,Africa,Senegal,SENELEC,1103.415,44.2507480634376
+,Africa,Senegal,SOGEM-OMVS,521.96,90.2512274067849
+,Africa,Senegal,Sonatel,3871.98,88.9079459933564
+,Africa,Senegal,Wari Group,655.857,48.1939552761614
+,Africa,Sierra Leone,Sierratel,80.664,3.24877078551799
+,Africa,Sierra Leone,TBD,875.928,80.5966769522056
+,Africa,Somalia,Dalkom,3376.837,34.2504478329793
+,Africa,Somalia,Hormuud,1020.074,17.9458681950346
+,Africa,Somalia,Somcable,1564.696,12.7993490537629
+,Africa,South Africa,Broadband Infraco,9469.13500000001,28.3086094623432
+,Africa,South Africa,DFA,7887.37399999999,57.920550535433
+,Africa,South Africa,FibreCo,4387.485,48.5458555668592
+,Africa,South Africa,Fibrehoods,102.016,76.3730581980199
+,Africa,South Africa,Internet Solutions,221.565,13.0781980827451
+,Africa,South Africa,Liquid Telecom,6335.678,24.4497107425705
+,Africa,South Africa,MTN,7201.87699999998,85.3672645511106
+,Africa,South Africa,Neotel,11825.15,30.9649102240801
+,Africa,South Africa,SASOL,333.214,90.1011293558404
+,Africa,South Africa,Telkom,26837.283,77.8848088243976
+,Africa,South Africa,Vodacom,6026.79699999999,50.8837139131501
+,Africa,South Sudan,TBD,6080.341,41.8822470717132
+,Africa,Sudan,Areeba,6113.329,33.03647906892
+,Africa,Sudan,Mobitel,6113.329,26.5199247784913
+,Africa,Sudan,Sudatel,7128.372,54.8923078496009
+,Africa,Swaziland,Swaziland Electricity Company,1390.196,5.51813494320959
+,Africa,Swaziland,Swazi Telecom,1390.196,62.3759060716256
+,Africa,Tanzania,Airtel,8863.15900000001,24.0434080027044
+,Africa,Tanzania,Liquid Telecom,4927.241,81.5717623140663
+,Africa,Tanzania,NICTBB,6915.351,65.3898054771125
+,Africa,Tanzania,SimbaNET,205.019,69.8443369045854
+,Africa,Tanzania,SONGAS,273.867,74.8468232238665
+,Africa,Tanzania,TANESCO,3854.977,18.6405535405502
+,Africa,Tanzania,Tigo,9147.142,69.0955643113703
+,Africa,Tanzania,TRL,1894.146,72.7547692172229
+,Africa,Tanzania,Vodacom,8863.15900000001,65.8345088167116
+,Africa,Tanzania,Zanlink,10.138,71.3443350968882
+,Africa,Tanzania,Zantel,9151.827,62.351446211338
+,Africa,Togo,Canal+,17.174,9.08495669160038
+,Africa,Togo,Moov,660.582,88.2902033338323
+,Africa,Togo,Togo Telecom,993.461,74.1507952651009
+,Africa,Tunisia,Ooredoo,333.015,36.3935661539435
+,Africa,Tunisia,Orange Tunisie,471.514,55.2107538692653
+,Africa,Tunisia,SNCFT,1722.107,31.6966508319601
+,Africa,Tunisia,STEG,2361.1,21.7666243519634
+,Africa,Tunisia,Tunisie Telecom,3140.386,67.2889519939199
+,Africa,Uganda,Airtel,3126.437,55.1463615745306
+,Africa,Uganda,BCS,3126.437,16.1338889449835
+,Africa,Uganda,Google,425.666,7.25386221799999
+,Africa,Uganda,Government of Uganda (NBI),3567.703,54.247490930371
+,Africa,Uganda,iWayAfrica,425.666,3.01869776938111
+,Africa,Uganda,Liquid Telecom,1043.766,57.1375761730596
+,Africa,Uganda,MTN,2546.641,5.1297380020842
+,Africa,Uganda,Roke Telkom,859.111999999999,35.0551768383011
+,Africa,Uganda,UETCL,3149.333,82.6575009515509
+,Africa,Uganda,Uganda Telecom,489.123,59.0220458516851
+,Africa,Zambia,Airtel,1243.277,39.5733118234202
+,Africa,Zambia,CEC Liquid Telecom,1781.252,54.0334070231766
+,Africa,Zambia,MTN,3180.127,82.065453896299
+,Africa,Zambia,ZAMTEL,11428.425,30.1450741374865
+,Africa,Zambia,ZESCO,7903.536,28.4232125002891
+,Africa,Zimbabwe,Liquid Telecom,4056.949,60.9097908008844
+,Africa,Zimbabwe,PowerTel,2679.122,13.991897361353
+,Africa,Zimbabwe,TelOne,1995.033,46.0637660827488
+,Asia,Afghanistan,Afghan Telecom,6224.265,39.0053551122546
+,Asia,Bangladesh,Bangladesh Rail,2795.041,85.746666578576
+,Asia,Bangladesh,Banglalink,2579.645,20.8982748994604
+,Asia,Bangladesh,Banglaphone,5578.06699999999,19.3496902091429
+,Asia,Bangladesh,BTCL,4823.218,57.098112789914
+,Asia,Bangladesh,Fiber@Home,7165.21600000001,28.9832315910608
+,Asia,Bangladesh,Grameenphone,3835.292,16.6398935429752
+,Asia,Bangladesh,PGCB,4939.264,40.2489080550149
+,Asia,Bangladesh,Robi,1104.182,64.3767977450043
+,Asia,Bangladesh,SCL,9301.51800000001,70.85064745415
+,Asia,Bangladesh,Summit Communications Limited,1252.162,70.9455589288846
+,Asia,Cambodia,CFOCN,6786.789,85.1434221388772
+,Asia,Cambodia,Ezecom,3647.013,47.1395994480699
+,Asia,Cambodia,Telecom Cambodia,2471.729,35.0919205034152
+,Asia,Cambodia,Viettel,4250.883,10.2773110838607
+,Asia,India,Airtel,35910.352,53.3934616660699
+,Asia,India,Andhra Pradesh State FiberNet Ltd.,14004.92,88.3394114756957
+,Asia,India,Powertel,20902.022,12.2960088532418
+,Asia,India,Railtel,54209.5710000001,19.5310378391296
+,Asia,India,Reliance Jio,48954.125,2.46914947777987
+,Asia,India,Tata Communications,25754.635,46.3511857334524
+,Asia,Indonesia,Biznet,8083.06200000001,11.1885387906805
+,Asia,Indonesia,ICON+,18297.668,60.4911953713745
+,Asia,Indonesia,Indosat,15393.909,84.9244975568727
+,Asia,Indonesia,Moratelindo,9314.391,64.2219458557665
+,Asia,Indonesia,PGASCOM,1333.984,51.5566492676735
+,Asia,Indonesia,PowerTel,2690.986,24.0695716943592
+,Asia,Indonesia,Telkom Indonesia,19908.822,1.64515835605562
+,Asia,Indonesia,Telkom Telstra,19908.822,21.4664400685579
+,Asia,Indonesia,XL Axiata,11970.217,37.0614690557122
+,Asia,Jordan,Damamax,352.043,46.7089244388044
+,Asia,Jordan,National Broadband Network,1334.295,59.4717951808125
+,Asia,Jordan,NEPCO,1493.223,31.8081356342882
+,Asia,Jordan,Orange Jordan,1912.05,66.6071993801743
+,Asia,Jordan,Zain,1542.176,77.8214853899553
+,Asia,Kazakhstan,Kaztranscom,11237.371,87.9062484661117
+,Asia,Kazakhstan,Kcell,10906.483,4.59043097123504
+,Asia,Kazakhstan,Transtelecom,14685.749,3.46137897484004
+,Asia,Malaysia,DiGi,5782.04000000003,37.1551565211266
+,Asia,Malaysia,Fiberail,3468.45,67.9672287581488
+,Asia,Malaysia,Fibrecomm,5062.12000000001,73.3120264289901
+,Asia,Malaysia,MyKRIS,4006.861,17.1007154500112
+,Asia,Malaysia,Telekom Malaysia,5955.681,62.1106508970261
+,Asia,Malaysia,TIME dotCom,3161.943,29.45162587706
+,Asia,Malaysia,TNB,9529.76500000002,51.1926359953359
+,Asia,Mongolia,Gemnet,4043.979,71.3879619808868
+,Asia,Mongolia,ICNC,18690.289,81.8450875431299
+,Asia,Mongolia,Mobicom,4885.352,48.5320474710315
+,Asia,Mongolia,Railcom,1221.013,82.6839708341286
+,Asia,Myanmar,MPT,13273.83,10.376125424169
+,Asia,Myanmar,Ooredoo,10124.02,50.0011969488114
+,Asia,Myanmar,Telenor,6171.777,38.035156567581
+,Asia,Myanmar,Unicom China,1335.288,20.5646642148495
+,Asia,Oman,Omantel,6258.21,19.4923923201859
+,Asia,Oman,Ooredoo,7133.09899999999,31.9596541244537
+,Asia,Pakistan,Jazz,11856.479,83.786610070616
+,Asia,Pakistan,Multinet,9099.20399999999,70.0490415878594
+,Asia,Pakistan,Nayatel,209.364,55.0292258188128
+,Asia,Pakistan,PTCL,9097.87500000001,84.4317684685811
+,Asia,Pakistan,Satcomm,175.541,90.5154816564173
+,Asia,Pakistan,Special Communications Organization,966.770622742882,1.09069487452507
+,Asia,Pakistan,Wateen,10033.988,40.1406929073855
+,Asia,Papua New Guinea,Telikom PNG,1437.152,58.9872768372297
+,Asia,Philippines,Baytanel,3473.301,31.8988305507228
+,Asia,Philippines,Globe,1994.631,15.7478922875598
+,Asia,Philippines,Philcom,1072.763,45.8087622690946
+,Asia,Philippines,Piltel,1451.34,28.8050790168345
+,Asia,Philippines,PLDT,2682.74800000001,19.3383233007044
+,Asia,Philippines,PT&T,4495.896,48.2701412439346
+,Asia,Philippines,Smart,5594.594,64.9602355379611
+,Asia,Philippines,Telicphil,2853.486,86.3055520588532
+,Asia,Saudi Arabia,ITC,11751.992,30.5821676729247
+,Asia,Saudi Arabia,Saudi Telecom Company,10588.504,81.0609510298818
+,Asia,Sri Lanka,CEB,1750.152,57.4162029558793
+,Asia,Sri Lanka,Sri Lanka Telecom,5809.73699999999,59.0337935499847
+,Asia,Thailand,UniNet,28100.9630000001,41.2535870252177
+,Asia,Turkey,Millenicom,10533.515,37.804164936766
+,Asia,Turkey,SOCAR,1886.923,49.8788810931146
+,Asia,Turkey,Turkcell Superonline,10533.515,88.7856344962493
+,Asia,Turkey,Turk Telekom,11099.682,29.4881357708946
+,Asia,Turkey,Vodafone,9301.65,59.2550065172836
+,Asia,United Arab Emirates,Omantel,81.856,47.7868314450607
+,Asia,Vietnam,Vinaphone,18819.023,66.5232923803851
+,Europe,Cyprus,MTN,582.222,78.8196707740426
+,Europe,Ukraine,Atracom,18286.317,66.2792238071561
+,Europe,Ukraine,Datagroup,8703.181,7.48294650483876
+,Europe,Ukraine,ETT,8354.388,71.6062808446586
+,Europe,Ukraine,UARNet,11934.036,45.3282653950155
+,Europe,Ukraine,Urktelecom,11495.647,61.5121723655611
+,Latin America,Argentina,ARSAT,54031.135,65.0380493132398
+,Latin America,Argentina,Cablevision,7555.368,44.8437470933422
+,Latin America,Argentina,Gigared,4656.577,61.6028672400862
+,Latin America,Argentina,Internexa,2132.11,14.1787422625348
+,Latin America,Argentina,Metrotel,850.082,12.831023930572
+,Latin America,Argentina,Silica Networks,18231.3881104766,2.50169779080898
+,Latin America,Argentina,Telefonica,6548.35524695558,28.9266345500946
+,Latin America,Bolivia,AXS,6186.916,57.6397861996666
+,Latin America,Bolivia,COMTECO,468.624,30.3067768076435
+,Latin America,Bolivia,COTAS,6105.398,47.264957850799
+,Latin America,Bolivia,COTEL,102.709,14.9099274436012
+,Latin America,Bolivia,Digital TV and Cable,1172.341,4.26701238751411
+,Latin America,Bolivia,Entel,8387.63300000003,42.5705099096522
+,Latin America,Bolivia,Tigo,4965.256,44.4920951165259
+,Latin America,Bolivia,VIVA,9916.65300000005,84.3279634173959
+,Latin America,Brazil,BRFibra,46685.7550000001,8.98671286553144
+,Latin America,Brazil,CDC,2318.795,12.5258886665106
+,Latin America,Brazil,CELESC,333.003,34.5815504426137
+,Latin America,Brazil,CEMIG,1952.107,45.7908778022975
+,Latin America,Brazil,Electronorte,6367.907,61.4047698015347
+,Latin America,Brazil,Embratel,31004.7780000002,32.3671849388629
+,Latin America,Brazil,IFTNet,814.91,74.2790136151016
+,Latin America,Brazil,inTelle,28931.879,29.6597763188183
+,Latin America,Brazil,Level 3,9235.11000000002,79.1540163839236
+,Latin America,Brazil,Oi,58585.646,49.8023059954867
+,Latin America,Brazil,Petrobras,7310.703,17.4794470928609
+,Latin America,Brazil,SAMM,5925.62800000001,54.4332401910797
+,Latin America,Brazil,Silica Networks,4736.059,56.2852525003254
+,Latin America,Brazil,Telebras,29646.067,88.0857279794291
+,Latin America,Brazil,TIM Brazil,37772.51,8.76150562800467
+,Latin America,Chile,Austral,1577.551,26.7974248658866
+,Latin America,Chile,Entel,4815.124,62.1237772926688
+,Latin America,Chile,Internexa,1698.127,52.6052527213469
+,Latin America,Chile,Silica Networks,1237.086,87.4002921478823
+,Latin America,Colombia,Azteca Communications,6439.266,75.3025195552036
+,Latin America,Colombia,CenturyLink,5107.181,64.4362766519189
+,Latin America,Colombia,C&W Networks,5450.49,88.9019899386913
+,Latin America,Colombia,ETB,6367.326,13.2291541472077
+,Latin America,Colombia,Internexa,6409.082,31.076062893495
+,Latin America,Colombia,Metrotel,351.853,28.2087667882442
+,Latin America,Colombia,Tigo,938.285,59.4941119980067
+,Latin America,Colombia,UFINET,10725.213,44.9859903370962
+,Latin America,Costa Rica,REDCA,661.465,31.4757791757584
+,Latin America,Ecuador,Celec,4004.927,11.0646219495684
+,Latin America,Ecuador,CNT,6968.978,88.4780854955316
+,Latin America,Ecuador,Telconet,7300.877,24.8037425931543
+,Latin America,Ecuador,Transnexa,2537.117,19.0513348150998
+,Latin America,El Salvador,REDCA,329.651,10.0039741620421
+,Latin America,French Guiana,Guyacom,201.716,58.385293035768
+,Latin America,Guatemala,REDCA,331.587,63.8422126593068
+,Latin America,Guatemala,Ufinet,5132.16399999999,70.4087439635769
+,Latin America,Honduras,REDCA,516.79,89.7524779746309
+,Latin America,Mexico,AT&T Mexico,1947.236,47.1212262744084
+,Latin America,Mexico,Axtel,9119.191,9.0685203243047
+,Latin America,Mexico,Bestel,21709.682,77.9064943585545
+,Latin America,Mexico,Cogent,3304.939,5.92353226989508
+,Latin America,Mexico,GTAC,15947.256,25.5479674171656
+,Latin America,Mexico,Level 3,4402.336,41.3397345915437
+,Latin America,Mexico,Marcatel,4942.292,61.2087847702205
+,Latin America,Mexico,Maxcom,4887.747,22.6336953965947
+,Latin America,Mexico,MCM,6183.663,49.1012402195483
+,Latin America,Mexico,RedIT,8973.31700000001,87.0062096780166
+,Latin America,Mexico,Telmex,21437.148,83.757472731173
+,Latin America,Mexico,Transtelco,7848.468,10.7064929408953
+,Latin America,Nicaragua,Enatrel,1420.204,83.4065018258989
+,Latin America,Nicaragua,IDB,1365.498,68.0599922863767
+,Latin America,Nicaragua,REDCA,309.04,74.1427695928141
+,Latin America,Nicaragua,Ufinet,2543.422,81.3084917645901
+,Latin America,Panama,REDCA,751.699,80.2891464335844
+,Latin America,Paraguay,Claro,1386.662,14.2188324863091
+,Latin America,Paraguay,Copaco,5190.064,18.5172585528344
+,Latin America,Paraguay,Personal,2529.626,48.7832584735006
+,Latin America,Paraguay,Silica Networks,340.391,58.2048228653148
+,Latin America,Paraguay,Tigo,5688.57799999999,48.9930377285928
+,Latin America,Paraguay,Ufinet,1984.547,58.847880423069
+,Latin America,Peru,Azteca,17228.654,55.6829083608463
+,Latin America,Peru,Bitel,9635.09,72.7967803217471
+,Latin America,Peru,Claro,7331.489,76.8992152381688
+,Latin America,Peru,Consorcio Optical Systems,351.815,64.6868825228885
+,Latin America,Peru,FITEL Project - TBD,9452.346,40.182073357515
+,Latin America,Peru,Internexa,6385.313,49.7414278974757
+,Latin America,Peru,Movistar,12296.943,44.0956265283749
+,Latin America,Peru,Winner Systems,235.932,38.9345513321459
+,Latin America,Uruguay,Citesa,2600.117,5.86265417188406
+,Latin America,Venezuela,Internexa,2211.253,52.1641468526796
+,North America,Canada,GTT,551.436,25.8410457326099
+,North America,United States of America,GTT,9581.496,10.7861864417791
+,North America,United States of America,Zayo,130071.297999996,76.7121142698452
+,,South Africa,MTN,,66.1807803241536
+,,,Claro,39.282,70.9949712539092
