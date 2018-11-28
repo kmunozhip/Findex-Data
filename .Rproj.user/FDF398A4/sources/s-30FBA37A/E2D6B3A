@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543257606737.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E2D6B3A",
+    "lastKnownWriteTime" : 1543257667,
+    "last_content_update" : 1543257667198,
+    "path" : "~/investor-data/investor-markdown.Rmd",
+    "project_path" : "investor-markdown.Rmd",
+    "properties" : {
+        "cursorPosition" : "11,13",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

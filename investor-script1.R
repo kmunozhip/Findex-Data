@@ -15,7 +15,7 @@ summary(findexPage1$X3)
 
 
 #Subseting Data for Asia Only
-asiaFindex <- subset(findexPage1, X4 == "East Asia & Pacific (excluding high income)")
+asiaFindex <- subset(findexPage1, X4 == "South Asia")
 asiaFindex
 
 #Dummy Data Donut Chart
@@ -34,19 +34,19 @@ p1 <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)
   theme(axis.text=element_blank()) +
   theme(axis.ticks=element_blank()) +
   scale_fill_manual(values = c('#e0e0e0','#0D6EB8')) +
-  labs(title="Southeast Asia: Fiber Reach (%)")
+  labs(title="South Asia: Fiber Reach (%)")
 p1
 
 #Dummy Data Fiber Reach Bar Chart 
-asiaFRbar <- data.frame(value=c(40, 62, 34, 60, 45, 75), 
-  country=c('Cambodia', 'Indonesia', 'Myanmar', 'Malaysia', 'Philippines', 'Thailand'))
+asiaFRbar <- data.frame(value=c(40, 62, 34, 60, 45, 75, 80, 68), 
+  country=c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
 
 p2 <- ggplot(asiaFRbar, aes(country, value)) +
   geom_col( aes(fill=country)) +
   scale_fill_brewer(palette = 'Set2') +
   geom_hline(yintercept=72, color='#0D6EB8', size=1.5) +
   coord_flip() +
-  scale_y_continuous(limits = c(0,80), expand = c(0, 0))
+  scale_y_continuous(limits = c(0,90), expand = c(0, 0))
 p2
 
 #Providers By Country Bar Chart
@@ -54,13 +54,13 @@ asiaProviders <- subset(providers, continent == 'Asia')
 asiaProviders <- asiaProviders[c(3:6)]
 asiaProviders <- count(asiaProviders, "country")
 asiaProviders <- asiaProviders[asiaProviders$country %in%
-  c('Cambodia', 'Indonesia', 'Myanmar', 'Malaysia', 'Philippines', 'Thailand'),]
+  c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'),]
 asiaProviders
 
 p3 <- ggplot(asiaProviders, aes(country, freq)) +
   geom_col(aes(fill=country)) +
   scale_fill_brewer(palette = 'Set2') +
-  scale_y_continuous(limits = c(0,10), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0,11), expand = c(0, 0)) +
   coord_flip()
 p3
 
@@ -70,18 +70,74 @@ asiaScatter <- dplyr::rename(asiaScatter, country = ï..Country)
 asiaScatter <- dplyr::transmute(asiaScatter,
   country=country,FB.Growth.Rate=FB.Growth.Rate*100,IMR=IMR*100,LE.Rate=LE.Rate*100)
 asiaScatter <- subset(asiaScatter, country %in% 
-  c('Cambodia', 'Indonesia', 'Myanmar', 'Malaysia', 'Philippines', 'Thailand'))
+  c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
 
 p4 <- ggplot(asiaScatter, aes(x=FB.Growth.Rate, y=IMR, color=LE.Rate)) +
   geom_point(size=5)+
-  geom_smooth(se = 0, color="black", linetype="solid", method=lm) +
-  scale_color_gradient(low='#65C7F7', high='#0052D4') +
+  geom_smooth(se=FALSE, color="black", linetype="solid", method=lm) +
+  scale_color_gradient(low ='#65C7F7', high ='#5077BD') +
   ggrepel::geom_label_repel(data=asiaScatter, 
     aes(label = asiaScatter$country), direction='both', color = 'black', nudge_x = 1.5)
 p4
 
-#Financial Inclusion Chart 1
+#Financial Inclusion Chart 1 (% of Adults with an Account, 2011-2017)
 findexChart1 <- subset(asiaFindex, X3 %in% 
-  c('Cambodia', 'Indonesia', 'Myanmar', 'Malaysia', 'Philippines', 'Thailand'))
+  c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
 findexChart1 <- findexChart1[,c(1:29,770:781)]
 
+str(findexChart1)
+findexChart1 <- dplyr::mutate(findexChart1,
+  `Account.(%.age.15+)`=`Account.(%.age.15+)`*100)
+
+fchart1 <- ggplot(findexChart1, aes(x=X1, y=`Account.(%.age.15+)`, color=X3)) +
+  geom_point() +
+  geom_line(aes(group=X3), size = 1)
+fchart1
+
+#WorldBank Data
+asiaBroadband <- wbstats::wb(country = c('AFG', 'BGD', 'BTN', 'IND', 'MDV', 'NPL', 'PAK', 'LKA'), 
+            indicator = 'IT.NET.BBND.P2', mrv = 5)
+
+asiaIMR <- wbstats::wb(country = c('AFG', 'BGD', 'BTN', 'IND', 'MDV', 'NPL', 'PAK', 'LKA'),
+            indicator = 'SP.DYN.IMRT.IN', mrv = 5)
+
+asiaLE <- wbstats::wb(country = c('AFG', 'BGD', 'BTN', 'IND', 'MDV', 'NPL', 'PAK', 'LKA'),
+            indicator = 'SP.DYN.LE00.IN', mrv = 5)
+
+asiaBroadband
+asiaIMR
+asiaLE
+
+#Health Plots
+
+p5 <- ggplot(asiaBroadband, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  scale_color_brewer(palette = 'Set2') +
+  scale_x_discrete(limits = c('2013', '2014', '2015', '2016', '2017'), expand = c(0,0))
+p5
+
+p6 <- ggplot(asiaIMR, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  scale_color_brewer(palette = 'Set2') +
+  scale_x_discrete(limits = c('2013', '2014', '2015', '2016', '2017'), expand = c(0,0))
+p6
+
+p7 <- ggplot(asiaLE, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  scale_color_brewer(palette = 'Set2') +
+  scale_x_discrete(limits = c('2013', '2014', '2015', '2016', '2017'), expand = c(0,0))
+p7
+
+#Comparing
+gridExtra::grid.arrange(p5, p6, p7, p4, ncol=2, nrow=2)
+
+#Export
+tiff('test.tiff', units='in', width = 5.5, height = 3, res = 300)
+ggplot(asiaBroadband, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  scale_color_brewer(palette = 'Set2') 
+dev.off()
