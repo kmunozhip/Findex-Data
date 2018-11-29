@@ -37,6 +37,8 @@ p1 <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)
   labs(title="South Asia: Fiber Reach (%)")
 p1
 
+#Donut Chart for Each Country
+
 #Dummy Data Fiber Reach Bar Chart 
 asiaFRbar <- data.frame(value=c(40, 62, 34, 60, 45, 75, 80, 68), 
   country=c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
@@ -77,7 +79,7 @@ p4 <- ggplot(asiaScatter, aes(x=FB.Growth.Rate, y=IMR, color=LE.Rate)) +
   geom_smooth(se=FALSE, color="black", linetype="solid", method=lm) +
   scale_color_gradient(low ='#65C7F7', high ='#5077BD') +
   ggrepel::geom_label_repel(data=asiaScatter, 
-    aes(label = asiaScatter$country), direction='both', color = 'black', nudge_x = 1.5)
+    aes(label = asiaScatter$country), direction='both', color = 'black', nudge_x = 0.8)
 p4
 
 #Financial Inclusion Chart 1 (% of Adults with an Account, 2011-2017)
@@ -94,6 +96,18 @@ fchart1 <- ggplot(findexChart1, aes(x=X1, y=`Account.(%.age.15+)`, color=X3)) +
   geom_line(aes(group=X3), size = 1)
 fchart1
 
+#Financial Inclusion Chart 2 - Pop up from Fiber Front Page
+findexChart2 <- subset (asiaFindex, X3 %in%
+  c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
+findexChart2 <- findexChart2[,c(1:29,770:781)]
+findexChart2 <- dplyr::mutate(findexChart2, 
+  `Mobile.money.account.(%.age.15+)`=`Mobile.money.account.(%.age.15+)`*100)
+
+fchart2 <- ggplot(findexChart2, aes(X1, y=`Mobile.money.account.(%.age.15+)`, color=X3)) +
+  geom_point() +
+  geom_line(aes(group=X3), size = 1)
+fchart2
+  
 #WorldBank Data
 asiaBroadband <- wbstats::wb(country = c('AFG', 'BGD', 'BTN', 'IND', 'MDV', 'NPL', 'PAK', 'LKA'), 
             indicator = 'IT.NET.BBND.P2', mrv = 5)
