@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2117009655",
     "id" : "6FFF4670",
-    "lastKnownWriteTime" : 1543604614,
-    "last_content_update" : 1543604614839,
+    "lastKnownWriteTime" : 1543616949,
+    "last_content_update" : 1543616949358,
     "path" : "~/investor-data/financial-charts.R",
     "project_path" : "financial-charts.R",
     "properties" : {
-        "cursorPosition" : "9,10",
-        "scrollLine" : "0"
+        "cursorPosition" : "44,0",
+        "scrollLine" : "22"
     },
     "relative_order" : 3,
     "source_on_save" : false,

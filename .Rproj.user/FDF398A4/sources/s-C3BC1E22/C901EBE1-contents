@@ -35,7 +35,7 @@ asiaScatter <- subset(asiaScatter, country %in%
 p4 <- ggplot(asiaScatter, aes(x=FB.Growth.Rate, y=IMR, color=LE.Rate)) +
   geom_point(size=5)+
   geom_smooth(se=FALSE, color="black", linetype="solid", method=lm) +
-  scale_color_gradient(low ='#65C7F7', high ='#5077BD') +
+  scale_color_gradient(low ='dodgerblue', high ='black') +
   ggrepel::geom_label_repel(data=asiaScatter, 
                             aes(label = asiaScatter$country), direction='both', color = 'black', nudge_x = 0.8)
 p4

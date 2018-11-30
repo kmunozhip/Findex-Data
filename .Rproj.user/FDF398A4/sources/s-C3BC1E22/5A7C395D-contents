@@ -54,7 +54,8 @@ p3 <- ggplot(asiaProviders, aes(x = reorder(country, desc(country)), freq)) +
   scale_y_continuous(limits = c(0,11), expand = c(0, 0)) +
   coord_flip() +
   theme() +
-  labs(x = 'Country', y = 'Count', title = 'Number of Networks by Country')
+  labs(x = 'Country', y = 'Count', title = 'Number of Networks by Country') +
+  theme(legend.position = 'none')
 p3
 
 #WorldBank Data
@@ -65,5 +66,21 @@ p5 <- ggplot(asiaBroadband, aes(x = date, y = value, color = country)) +
   geom_line(aes(group = country), size = 1.2) +
   geom_point() +
   scale_color_brewer(palette = 'Set2') +
-  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0))
+  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0)) +
+  labs(x = 'Year', y = 'Subscriptions per 100 peple', title = 'Fixed BroadBand Subs. by Country (2012-2016)')
 p5
+
+#Fixed Broadband Subscriptions & Fiber Reach by Country
+asiafbfr <- data.frame(country = c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'),
+  fr = c(12, 55, 30, 25, 60, 17, 19, 53))
+asiafbfr <- merge(asiafbfr, asiaBroadband, by.x = "country", by.y = "country", all.x = TRUE)
+asiafbfr <- subset(asiafbfr, date == '2016')
+asiafbfr <- p8[,c(1,2,5)]
+
+p8 <- ggplot(asiafbfr, aes(fr, value)) +
+  geom_point(aes(color=country), size=4) +
+  geom_smooth(method = lm, se = FALSE) +
+  labs(x = 'Fiber Reach (% of Population)', y = 'FB Subscriptions (Per 100 people)',
+    title = 'Fixed Broadband vs Fiber Reach (2016)') +
+  scale_color_brewer( palette = 'Set2')
+p8
