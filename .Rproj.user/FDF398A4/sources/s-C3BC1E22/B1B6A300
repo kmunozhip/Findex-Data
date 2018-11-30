@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543519147440.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1649145939",
+    "id" : "B1B6A300",
+    "lastKnownWriteTime" : 1543444513,
+    "last_content_update" : 1543444513,
+    "path" : "~/investor-data/subnational-dashboard.R",
+    "project_path" : "subnational-dashboard.R",
+    "properties" : {
+        "cursorPosition" : "29,24",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

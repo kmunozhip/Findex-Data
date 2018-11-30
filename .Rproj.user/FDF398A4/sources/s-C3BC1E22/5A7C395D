@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543603872551.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5A7C395D",
+    "lastKnownWriteTime" : 1543604603,
+    "last_content_update" : 1543604603292,
+    "path" : "~/investor-data/connectivity-charts.R",
+    "project_path" : "connectivity-charts.R",
+    "properties" : {
+        "cursorPosition" : "5,57",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
