@@ -1,54 +1,1 @@
-[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
-[0K[?25hOn branch master[0K[?25l
-Changes not staged for commit:[0K
-  (use "git add/rm <file>..." to update what will be committed)[0K
-  (use "git checkout -- <file>..." to discard changes in working directory)[0K
-[0K
-        [0;31mmodified:   .RData[0m[0K
-        [0;31mmodified:   .Rhistory[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/console06/72773897[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/console06/INDEX001[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/pcs/source-pane.pper[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/pcs/windowlayoutstate.pper[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/pcs/workbench-pane.pper[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/rmd-outputs[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/1144959[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/1CDBAFC5[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/776D39A0[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/B21EDE58[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/BF89237D[0m[0K
-        [0;31mmodified:   .Rproj.user/FDF398A4/sources/prop/D2E24E13[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/22F51D93[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/22F51D93-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/5A7C395D[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/5A7C395D-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/6A960A7A-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/6FFF4670[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/6FFF4670-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/771369AF[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/771369AF-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/B1B6A300[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/B1B6A300-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/C901EBE1[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/C901EBE1-contents[0m[0K
-        [0;31mdeleted:    .Rproj.user/FDF398A4/sources/s-C3BC1E22/lock_file[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/E535D3C3-investor-markdown/1/s/chunks.json[0m[0K
-        [0;31mmodified:   .Rproj.user/shared/notebooks/paths[0m[0K[9G[?25h[?25l
-        [0;31mmodified:   connectivity-charts.R[0m[0K
-        [0;31mmodified:   health-charts.R[0m[0K
-        [0;31mmodified:   investor-markdown.Rmd[0m[0K
-        [0;31mmodified:   investor-markdown.html[0m[0K
-        [0;31mmodified:   subnational-dashboard.R[0m[0K
-[0K
-Untracked files:[0K
-  (use "git add <file>..." to include in what will be committed)[0K
-[0K
-        [0;31m.Rproj.user/FDF398A4/sources/s-AD7633BB/[0m[0K
-        [0;31m.Rproj.user/shared/notebooks/E535D3C3-investor-markdown/1/FDF398A49D63CF18/[0m[0K
-        [0;31m.Rproj.user/shared/notebooks/E535D3C3-investor-markdown/1/FDF398A4AD7633BB/[0m[0K
-        [0;31mfindex-data/Asia_fibreach_dec2018.xlsx[0m[0K
-[0K
-no changes added to commit (use "git add" and/or "git commit -a")[0K
-[0K[?25h[?25l
-[0;32mKrashaldy Muñoz@LAPTOP-12DQPH01 [0;35m [0;33m~/Documents/investor-data[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h
+[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h

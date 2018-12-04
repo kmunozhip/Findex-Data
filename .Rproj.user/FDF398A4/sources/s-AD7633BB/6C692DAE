@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543959568833.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6C692DAE",
+    "lastKnownWriteTime" : 1543960138,
+    "last_content_update" : 1543960138239,
+    "path" : "~/investor-data/health-charts.R",
+    "project_path" : "health-charts.R",
+    "properties" : {
+        "cursorPosition" : "122,67",
+        "scrollLine" : "109"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

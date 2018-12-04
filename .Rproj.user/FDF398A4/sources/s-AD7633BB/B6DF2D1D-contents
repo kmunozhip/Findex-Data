@@ -7,6 +7,41 @@ output: html_document
 
 #Asian Investment Bank Wireframe Charts (Regional)
 
+This document contains all of the charts and data used to create the wireframe for the Investment Dashboard for the proposed InfraNav Statistics Panel.
+
+First I need to define the list of countries that will be used for this analysis.
+
+They can be seperated in to two regions
+
+* South Asia
+    + Bangladesh
+    + Pakistan
+    + Sri Lanka
+    + India
+* Southeast Asia
+    + Indonesia
+    + Vietnam
+    + Thailand
+    + Malaysia
+    + Philippines
+    + Cambodia
+    + Myanmar
+    
+Country     | iso Code
+----------- | ------------
+Bangladesh  | BGD
+Pakistan    | PAK 
+Sri Lanka   | LKA
+India*      | IND 
+Indonesia   | IDN
+Vietnam     | VNM
+Thailand    | THA
+Malaysia    | MYS
+Philippines | PHL
+Cambodia    | KHM
+Myanmar     | MMR
+***
+
 ```{r message=FALSE}
 #Load Required Packages
 library(openxlsx)
