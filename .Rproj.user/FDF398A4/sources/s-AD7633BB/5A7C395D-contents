@@ -43,7 +43,7 @@ p2
 #Providers By Country Bar Chart
 asiaProviders <- subset(providers, continent == 'Asia')
 asiaProviders <- asiaProviders[c(3:6)]
-asiaProviders <- count(asiaProviders, "country")
+asiaProviders <- plyr::count(asiaProviders, "country")
 asiaProviders <- asiaProviders[asiaProviders$country %in%
                                  c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'),]
 asiaProviders
