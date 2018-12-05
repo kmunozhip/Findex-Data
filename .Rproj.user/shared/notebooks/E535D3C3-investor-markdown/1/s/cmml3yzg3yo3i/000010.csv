@@ -1,0 +1,4 @@
+"0","#Joining it all"
+"0","asiaScatter <- merge(rate_asiabroadband, rate_imr, by.x = 'country', by.y = 'country', all.x = TRUE)"
+"0","asiaScatter <- merge(asiaScatter, rate_le, by.x = 'country', by.y = 'country', all.x = TRUE)"
+"0","asiaScatter"

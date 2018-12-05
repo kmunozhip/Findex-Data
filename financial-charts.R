@@ -11,13 +11,12 @@ asiaFindex
 
 #Financial Inclusion Chart 1 (% of Adults with an Account, 2011-2017)
 findexChart1 <- subset(asiaFindex, X3 %in% 
-                         c('Afghanistan', 'Bangladesh', 'Bhutan', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka'))
+                         c('Bangladesh', 'Pakistan', 'Sri Lanka', 'Indonesia', 'Vietnam', 'Thailand', 'Malaysia', 'Philippines', 'Cambodia'))
 findexChart1 <- findexChart1[,c(1:29,770:781)]
 findexChart1 <- subset(findexChart1, X1 %in% c('2011', '2014', '2017'))
 
-str(findexChart1)
 findexChart1 <- dplyr::mutate(findexChart1,
-                             `Account.(%.age.15+)`=`Account.(%.age.15+)`*100)
+                              `Account.(%.age.15+)`=`Account.(%.age.15+)`*100)
 
 fchart1 <- ggplot(findexChart1, aes(x=X1, y=`Account.(%.age.15+)`, color=X3)) +
   geom_point() +

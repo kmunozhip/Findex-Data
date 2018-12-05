@@ -1,0 +1,8 @@
+"0","asiaRow <- openxlsx::read.xlsx('findex-data/Asia_RoW.xlsx')"
+"0","asiaRow <- asiaRow[-c(3:4,6:15), c(1,9:10)]"
+"0","asiaRow <- tidyr::gather(asiaRow, type, value, 2:3)"
+"0","asiaRow <- dplyr::mutate(asiaRow, value = value/1000)"
+"0","ROW <- ggplot(asiaRow, aes(Country, value)) +"
+"0","  geom_col(aes(fill=type)) +"
+"0","  labs(y='Distance Measured in km (Thousands)')"
+"0","ROW"

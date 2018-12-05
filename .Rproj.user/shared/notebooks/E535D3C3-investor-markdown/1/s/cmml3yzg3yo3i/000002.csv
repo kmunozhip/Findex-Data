@@ -1,0 +1,4 @@
+"0","#Health Scatterplot: R Analysis & Data Manipulation"
+"0","asiaIMR %>% "
+"0","  group_by(country) %>% "
+"0","  summarise(avg_imr = mean(value, na.rm = TRUE))"

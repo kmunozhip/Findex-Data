@@ -1,0 +1,4 @@
+"0","asiaIMR <- wbstats::wb(country = c('BGD', 'PAK', 'LKA', 'IDN', 'VNM', 'THA', 'MYS', 'PHL', 'KHM'),"
+"0","                       indicator = 'SP.DYN.IMRT.IN', mrv = 6)"
+"0","asiaLE <- wbstats::wb(country = c('BGD', 'PAK', 'LKA', 'IDN', 'VNM', 'THA', 'MYS', 'PHL', 'KHM'),"
+"0","                      indicator = 'SP.DYN.LE00.IN', mrv = 6)"

@@ -1,0 +1,463 @@
+cartodb_id,name_0,iso,name_1,name_2,name_3,pop,area,popden,hosp_ct
+132,Bangladesh,BGD,Dhaka,Dhaka,Tejgaon,9708740,358.6414111,27070.8839,257
+219,Bangladesh,BGD,Dhaka,Netrakona,Netrokona S.,437574.8125,383.1195692,1142.136418,24
+58,Bangladesh,BGD,Chittagong,Chandpur,Matlab,640954.0625,504.5759292,1270.282678,20
+287,Bangladesh,BGD,Khulna,Kustia,Mirpur,349979.75,388.5700383,900.6864027,18
+108,Bangladesh,BGD,Chittagong,Lakshmipur,Raipur,273540.75,217.9504895,1255.059122,8
+87,Bangladesh,BGD,Chittagong,Cox's Bazar,Chakaria,723420,789.1415848,916.7176258,7
+114,Bangladesh,BGD,Chittagong,Noakhali,Hatiya,388245.375,681.0500437,570.068791,1
+185,Bangladesh,BGD,Dhaka,Munshigonj,Sirajdikhan,275458.5625,209.7350435,1313.364509,18
+245,Bangladesh,BGD,Dhaka,Tangail,Tangail S.,557559,380.1131124,1466.823905,18
+48,Bangladesh,BGD,Chittagong,Brahmanbaria,Brahmanbaria S.,1184301.5,653.8149034,1811.371221,17
+129,Bangladesh,BGD,Dhaka,Dhaka,Keraniganj,610725.875,214.4067151,2848.445651,16
+137,Bangladesh,BGD,Dhaka,Faridpur,Faridpur S.,479010.3438,440.4724935,1087.49207,16
+369,Bangladesh,BGD,Rajshahi,Sirajgonj,Ullahpara,566671.9375,503.00262,1126.578501,11
+39,Bangladesh,BGD,Chittagong,Bandarbon,Alikadam,27475.93359,794.4069744,34.58672252,
+251,Bangladesh,BGD,Khulna,Bagerhat,Mongla,172468,1672.451987,103.1228408,7
+252,Bangladesh,BGD,Khulna,Bagerhat,Morrelganj,362886.875,494.0424133,734.5257517,2
+381,Bangladesh,BGD,Rangpur,Dinajpur,Parbatipur,414676.9063,534.756288,775.4502669,16
+272,Bangladesh,BGD,Khulna,Khulna,Batiaghata,185691.3906,270.1341657,687.404313,4
+300,Bangladesh,BGD,Khulna,Shatkhira,Kaliganj,268261.625,519.4439489,516.4399847,5
+22,Bangladesh,BGD,Barisal,Borgona,Patharghata,184514.9375,286.6037485,643.7980607,6
+75,Bangladesh,BGD,Chittagong,Comilla,Barura,455140,295.208816,1541.756125,15
+233,Bangladesh,BGD,Dhaka,Sherpur,Sherpur S.,521890.875,431.0492867,1210.745247,15
+32,Bangladesh,BGD,Barisal,Patuakhali,Patuakhali S.,420016.0625,432.6352445,970.8318217,18
+341,Bangladesh,BGD,Rajshahi,Nawabganj,Shibganj,754493.0625,644.0880373,1171.412942,2
+421,Bangladesh,BGD,Rangpur,Rongpur,Rangpur S.,781459.6875,403.7964291,1935.281323,30
+81,Bangladesh,BGD,Chittagong,Comilla,Daudkandi,596038.5,452.5705835,1317.00672,15
+18,Bangladesh,BGD,Barisal,Borgona,Amtali,314200.2188,640.852325,490.284901,12
+296,Bangladesh,BGD,Khulna,Narail,Narail S.,303984.3438,457.4828785,664.4715202,14
+420,Bangladesh,BGD,Rangpur,Rongpur,Pirganj,439571.1875,525.4458073,836.5680749,6
+165,Bangladesh,BGD,Dhaka,Kishoreganj,Kishoreganj S.,234841.9844,215.8650993,1087.910853,14
+308,Bangladesh,BGD,Rajshahi,Bogra,Gabtali,350680.4375,302.8701242,1157.857476,7
+88,Bangladesh,BGD,Chittagong,Cox's Bazar,Cox Bazar S,448508.3125,243.9264552,1838.703031,13
+149,Bangladesh,BGD,Dhaka,Gopalgonj,Muksudpur,314996.5625,399.4342246,788.6068422,13
+306,Bangladesh,BGD,Rajshahi,Bogra,Dhunat,320439.0625,302.2050711,1060.336484,8
+47,Bangladesh,BGD,Chittagong,Brahmanbaria,Bancharampur,344840.0625,244.8416843,1408.420562,13
+375,Bangladesh,BGD,Rangpur,Dinajpur,Dinajpur S.,464271.75,442.3272404,1049.611481,15
+418,Bangladesh,BGD,Rangpur,Rongpur,Mithapukur,552841.0625,632.1425565,874.5512493,13
+294,Bangladesh,BGD,Khulna,Narail,Kalia,213108.7813,336.8225824,632.703365,12
+35,Bangladesh,BGD,Barisal,Pirojpur,Mathbaria,376295.9063,996.1007006,377.7689404,15
+136,Bangladesh,BGD,Dhaka,Faridpur,Char Bhadrasan,67523.79688,163.6464542,412.6199813,
+293,Bangladesh,BGD,Khulna,Meherpur,Meherpur S.,406294.9063,477.5017512,850.8762642,12
+261,Bangladesh,BGD,Khulna,Jessore,Jessore S.,106053.8516,505.7994591,209.6756919,12
+107,Bangladesh,BGD,Chittagong,Lakshmipur,Lakshmipur S.,755203.6875,564.8633504,1336.96705,12
+224,Bangladesh,BGD,Dhaka,Rajbari,Rajbari S.,328659.7188,325.2546347,1010.468979,12
+78,Bangladesh,BGD,Chittagong,Comilla,Chandhina,362128.5,240.6185403,1504.990013,12
+14,Bangladesh,BGD,Barisal,Bhola,Daulatkhan,199587.3438,117.6074368,1697.063971,
+139,Bangladesh,BGD,Dhaka,Faridpur,Nagarkanda,380260.75,473.1372845,803.7006646,12
+210,Bangladesh,BGD,Dhaka,Nasirabad,Trishal,479073.125,408.3360354,1173.232542,12
+77,Bangladesh,BGD,Chittagong,Comilla,Burichang,350092.7813,202.6420276,1727.641524,12
+208,Bangladesh,BGD,Dhaka,Nasirabad,Phulbari,511184,489.4533493,1044.397797,12
+241,Bangladesh,BGD,Dhaka,Tangail,Madhupur,753130.625,627.6805489,1199.862934,12
+23,Bangladesh,BGD,Barisal,Jhalakati,Jhalakati S.,231246.0938,222.3370098,1040.07018,12
+366,Bangladesh,BGD,Rajshahi,Sirajgonj,Shahjadpur,564715.875,389.9045944,1448.343731,11
+264,Bangladesh,BGD,Khulna,Jessore,Manirampur,479426.9375,520.3378967,921.3761684,11
+28,Bangladesh,BGD,Barisal,Patuakhali,Dashina,106711.6875,193.8220815,550.5651714,6
+268,Bangladesh,BGD,Khulna,Jhenaidah,Kaliganj,309010.625,368.7037077,838.1001291,11
+186,Bangladesh,BGD,Dhaka,Munshigonj,Sreenagar,239325.75,246.369603,971.4094073,11
+223,Bangladesh,BGD,Dhaka,Rajbari,Pangsha,456950.25,548.5965645,832.9440605,10
+131,Bangladesh,BGD,Dhaka,Dhaka,Savar,1120702.25,418.4915855,2677.956472,10
+408,Bangladesh,BGD,Rangpur,Nilphamari,Nilphahari S.,464972.25,458.9734602,1013.070015,10
+25,Bangladesh,BGD,Barisal,Jhalakati,Nalchity,106860.6328,261.9747007,407.9043989,10
+387,Bangladesh,BGD,Rangpur,Gaibanda,Sadullapur,305409.625,282.6677168,1080.454565,10
+383,Bangladesh,BGD,Rangpur,Gaibanda,Gaibandha S.,477618.25,398.3954579,1198.854657,10
+367,Bangladesh,BGD,Rajshahi,Sirajgonj,Sirajganj S.,554215.625,381.1907949,1453.906108,10
+37,Bangladesh,BGD,Barisal,Pirojpur,Nesarabad,212504.6563,216.2313806,982.7651087,10
+349,Bangladesh,BGD,Rajshahi,Pabna,Santhia,411774,395.3786455,1041.467476,10
+343,Bangladesh,BGD,Rajshahi,Pabna,Bera,278831.375,327.7995289,850.6155452,10
+441,Bangladesh,BGD,Sylhet,Moulvibazar,Sreemangal,278164.5938,459.1666006,605.8031951,10
+288,Bangladesh,BGD,Khulna,Magura,Magura S.,396967.1875,475.9038222,834.1332198,10
+64,Bangladesh,BGD,Chittagong,Chittagong,Fatikchhari,580468.0625,894.3901737,649.0098836,10
+82,Bangladesh,BGD,Chittagong,Comilla,Debidwar,476825.4063,287.0467387,1661.142044,10
+86,Bangladesh,BGD,Chittagong,Comilla,Nangalkot,392142.25,287.1569786,1365.602368,10
+262,Bangladesh,BGD,Khulna,Jessore,Jhikargachha,349763.0625,362.4644501,964.9582529,10
+259,Bangladesh,BGD,Khulna,Jessore,Bagherpara,248001.1719,323.4886138,766.6457528,10
+90,Bangladesh,BGD,Chittagong,Cox's Bazar,Maheshkhali,290281.8125,324.9019664,893.4443079,4
+313,Bangladesh,BGD,Rajshahi,Bogra,Shibganj,413998.625,379.3905679,1091.220131,11
+92,Bangladesh,BGD,Chittagong,Cox's Bazar,Teknaf,260293.9219,358.6377535,725.7850556,4
+222,Bangladesh,BGD,Dhaka,Rajbari,Goalandaghat,142314.6563,177.578067,801.4202354,5
+404,Bangladesh,BGD,Rangpur,Nilphamari,Dimla,259439.3125,406.373586,638.4256297,7
+231,Bangladesh,BGD,Dhaka,Sherpur,Nakla,213085.3438,221.9117679,960.2255248,10
+189,Bangladesh,BGD,Dhaka,Naray Angonj,Bandar,376561.625,73.0264359,5156.511068,6
+229,Bangladesh,BGD,Dhaka,Shariatpur,Zanjira,445395.5625,635.1418356,701.2537004,10
+163,Bangladesh,BGD,Dhaka,Kishoreganj,Karimganj,385483.25,239.4800496,1609.667489,10
+201,Bangladesh,BGD,Dhaka,Nasirabad,Gaffargaon,540131.875,481.3962859,1122.01089,10
+26,Bangladesh,BGD,Barisal,Jhalakati,Rajapur,172986.3594,179.0476546,966.1470282,7
+194,Bangladesh,BGD,Dhaka,Narshingdi,Manohardi,313433.3125,232.4935829,1348.137478,10
+169,Bangladesh,BGD,Dhaka,Kishoreganj,Pakundia,295239.125,210.6088216,1401.83646,8
+159,Bangladesh,BGD,Dhaka,Kishoreganj,Bajitpur,361176.2188,221.9529824,1627.264544,9
+239,Bangladesh,BGD,Dhaka,Tangail,Gopalpur,381190.875,270.76317,1407.838721,9
+295,Bangladesh,BGD,Khulna,Narail,Lohagara,255896.875,352.3398889,726.2784688,9
+237,Bangladesh,BGD,Dhaka,Tangail,Delduar,217505.5313,215.4976752,1009.317298,9
+309,Bangladesh,BGD,Rajshahi,Bogra,Kahaloo,248911.1563,294.3086023,845.7488308,9
+439,Bangladesh,BGD,Sylhet,Moulvibazar,Maulvibazar S.,309193.625,395.1110838,782.5485988,9
+361,Bangladesh,BGD,Rajshahi,Sirajgonj,Belkuchi,339461.375,180.0077771,1885.815049,9
+244,Bangladesh,BGD,Dhaka,Tangail,Sakhipur,298700.5938,533.4054665,559.9878751,4
+458,Bangladesh,BGD,Sylhet,Sylhet,Gowainghat,414213.7813,690.0213963,600.2912134,9
+405,Bangladesh,BGD,Rangpur,Nilphamari,Domar,283770.7813,342.2212315,829.2027353,9
+205,Bangladesh,BGD,Dhaka,Nasirabad,Muktagachha,446879.8125,379.6319372,1177.139668,9
+425,Bangladesh,BGD,Rangpur,Thakurgaon,Pirganj,282676.625,466.9099879,605.4199575,9
+198,Bangladesh,BGD,Dhaka,Narshingdi,Shibpur,390482.1875,272.4282176,1433.339729,9
+255,Bangladesh,BGD,Khulna,Choua Danga,Chuadanga S.,321883.5,337.5318065,953.6390166,9
+311,Bangladesh,BGD,Rajshahi,Bogra,Sariakandi,248723.875,516.8000052,481.2768431,4
+246,Bangladesh,BGD,Khulna,Bagerhat,Bagerhat S.,247729.2188,316.704624,782.2090364,9
+391,Bangladesh,BGD,Rangpur,Kurigram,Charrajibpur,88047.39844,244.8044321,359.6642336,1
+292,Bangladesh,BGD,Khulna,Meherpur,Gangni,333882.5,407.9346809,818.4704945,9
+118,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Barkal,52631.9375,805.82908,65.31402106,
+174,Bangladesh,BGD,Dhaka,Madaripur,Shibchar,301100.1875,351.9752832,855.4583287,8
+53,Bangladesh,BGD,Chittagong,Chandpur,Chandpur S.,524940.875,288.4494205,1819.871484,8
+394,Bangladesh,BGD,Rangpur,Kurigram,Nageshwari,390199.6875,524.1125337,744.4960049,
+56,Bangladesh,BGD,Chittagong,Chandpur,Haziganj,318361.1875,190.6020095,1670.292923,8
+57,Bangladesh,BGD,Chittagong,Chandpur,Kachua,146063.5313,283.0113342,516.1048821,8
+61,Bangladesh,BGD,Chittagong,Chittagong,Banshkhali,578656.75,505.8832508,1143.854336,8
+29,Bangladesh,BGD,Barisal,Patuakhali,Galachipa,128937.2891,996.1216198,129.4393039,5
+83,Bangladesh,BGD,Chittagong,Comilla,Homna,289974.0313,225.6300507,1285.174694,8
+135,Bangladesh,BGD,Dhaka,Faridpur,Boalmari,336506.1875,416.5955059,807.7528027,8
+147,Bangladesh,BGD,Dhaka,Gopalgonj,Kashiani,245759.0313,353.1253463,695.9540963,8
+178,Bangladesh,BGD,Dhaka,Manikgonj,Manikganj S.,291121.3125,238.777299,1219.216876,8
+181,Bangladesh,BGD,Dhaka,Manikgonj,Singair,302585.8125,256.9671788,1177.527083,8
+191,Bangladesh,BGD,Dhaka,Naray Angonj,Rupganj,599001.5,301.687527,1985.503034,8
+204,Bangladesh,BGD,Dhaka,Nasirabad,Ishwarganj,469086.5938,370.0952707,1267.475245,8
+228,Bangladesh,BGD,Dhaka,Shariatpur,Shariatpur S.,246412.1875,212.3319223,1160.504671,8
+234,Bangladesh,BGD,Dhaka,Sherpur,Sreebardi,277109.125,310.0586462,893.7313261,8
+410,Bangladesh,BGD,Rangpur,Panchagarh,Atwari,159411.8125,273.0548292,583.8088012,3
+254,Bangladesh,BGD,Khulna,Choua Danga,Alamdanga,376154.9375,410.3526307,916.6626686,8
+256,Bangladesh,BGD,Khulna,Choua Danga,Damurhula,349849.0938,394.3358929,887.1855188,8
+258,Bangladesh,BGD,Khulna,Jessore,Abhaynagar,281506.875,285.5913535,985.6981716,8
+299,Bangladesh,BGD,Khulna,Shatkhira,Kalaroa,284367.4375,294.0699949,967.0059593,8
+312,Bangladesh,BGD,Rajshahi,Bogra,Sherpur,333571.125,346.5308625,962.6014913,8
+336,Bangladesh,BGD,Rajshahi,Natore,Singra,359335.1875,652.0704097,551.0680782,8
+332,Bangladesh,BGD,Rajshahi,Natore,Baraigram,391107.625,478.499144,817.3632699,8
+350,Bangladesh,BGD,Rajshahi,Pabna,Sujanagar,344867.8438,449.2742278,767.61101,8
+365,Bangladesh,BGD,Rajshahi,Sirajgonj,Raiganj,314290.5625,310.252261,1013.016187,8
+368,Bangladesh,BGD,Rajshahi,Sirajgonj,Tarash,204164.0313,360.9001669,565.7077773,8
+380,Bangladesh,BGD,Rangpur,Dinajpur,Nawabganj,523318.2813,410.2949444,1275.46851,8
+398,Bangladesh,BGD,Rangpur,Kurigram,Ulipur,415205.375,564.8383277,735.087112,8
+20,Bangladesh,BGD,Barisal,Borgona,Barguna S.,269631.0313,371.5162992,725.7582825,7
+402,Bangladesh,BGD,Rangpur,Lalmonirhat,Lalhonirhat S.,345475.6875,318.8787153,1083.4078,8
+214,Bangladesh,BGD,Dhaka,Netrakona,Kalmakanda,341055.6875,470.4233575,724.9973498,2
+434,Bangladesh,BGD,Sylhet,Hobiganj,Madhabpur,341618.375,331.1657753,1031.563043,8
+406,Bangladesh,BGD,Rangpur,Nilphamari,Jaldhaka,335675.0938,402.9725942,832.9973269,11
+443,Bangladesh,BGD,Sylhet,Sun Amgonj,Chhatak,420768.875,502.2061725,837.8409069,8
+426,Bangladesh,BGD,Rangpur,Thakurgaon,Ranisankail,266378.0625,387.9347549,686.6568646,7
+59,Bangladesh,BGD,Chittagong,Chandpur,Shahrasti,307097.375,223.3584294,1374.908374,7
+62,Bangladesh,BGD,Chittagong,Chittagong,Boalkhali,466834.5313,142.9641695,3265.395328,7
+102,Bangladesh,BGD,Chittagong,Khagrachari,Mahalchhari,43306.03516,201.978076,214.4095836,2
+290,Bangladesh,BGD,Khulna,Magura,Shalikha,178054.5781,267.8802735,664.6796937,7
+328,Bangladesh,BGD,Rajshahi,Naogaon,Porsha,148465.9063,317.043785,468.2820269,5
+180,Bangladesh,BGD,Dhaka,Manikgonj,Shivalaya,191100.4844,250.8122502,761.9264379,7
+31,Bangladesh,BGD,Barisal,Patuakhali,Mirzaganj,383513.9688,172.3492955,2225.21344,7
+389,Bangladesh,BGD,Rangpur,Gaibanda,Sundarganj,465655.625,517.6126344,899.6218292,7
+126,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Rangamati S.,98668.4375,601.2001656,164.1191123,6
+303,Bangladesh,BGD,Khulna,Shatkhira,Tala,335767.75,392.3658528,855.7517114,7
+436,Bangladesh,BGD,Sylhet,Moulvibazar,Barlekha,345362,532.0577303,649.1062536,7
+72,Bangladesh,BGD,Chittagong,Chittagong,Sandwip,386990.125,302.5026979,1279.294789,7
+24,Bangladesh,BGD,Barisal,Jhalakati,Kathalia,140414.4063,168.1061357,835.2723452,7
+283,Bangladesh,BGD,Khulna,Kustia,Daulatpur,527545.625,597.5377015,882.8658404,6
+462,Bangladesh,BGD,Sylhet,Sylhet,Zakiganj,340572.875,329.4877731,1033.643439,7
+157,Bangladesh,BGD,Dhaka,Jamalpur,Sarishabari,386245.4375,316.6687735,1219.714319,7
+74,Bangladesh,BGD,Chittagong,Chittagong,Sitakunda,358765,242.4949323,1479.474217,7
+240,Bangladesh,BGD,Dhaka,Tangail,Kalihati,431765.0625,364.7469562,1183.738631,10
+269,Bangladesh,BGD,Khulna,Jhenaidah,Kotchandpur,162598.9531,200.8122651,809.706285,7
+33,Bangladesh,BGD,Barisal,Pirojpur,Bhandaria,166705.5469,182.5357121,913.2763389,7
+263,Bangladesh,BGD,Khulna,Jessore,Keshabpur,729699.4375,311.308472,2343.97552,7
+123,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Langadu,92207.71875,704.7916755,130.8297501,7
+187,Bangladesh,BGD,Dhaka,Munshigonj,Tongibari,225637.6563,132.0282037,1709.011028,1
+307,Bangladesh,BGD,Rajshahi,Bogra,Dupchanchia,198528.1094,199.8974801,993.149635,7
+304,Bangladesh,BGD,Rajshahi,Bogra,Adamdighi,229813.0625,217.8467417,1054.929997,7
+143,Bangladesh,BGD,Dhaka,Gazipur,Kaliganj,454511.6875,241.9645404,1878.422709,7
+41,Bangladesh,BGD,Chittagong,Bandarbon,Lama,158019.7813,1076.742376,146.7572789,7
+203,Bangladesh,BGD,Dhaka,Nasirabad,Haluaghat,296454.875,368.5708238,804.336252,7
+446,Bangladesh,BGD,Sylhet,Sun Amgonj,Dowarabazar,313779.4063,427.0517776,734.7572887,9
+314,Bangladesh,BGD,Rajshahi,Bogra,Sonatala,193217.7344,164.5304374,1174.358601,7
+260,Bangladesh,BGD,Khulna,Jessore,Chaugachha,266315.2813,317.1522136,839.7080954,7
+250,Bangladesh,BGD,Khulna,Bagerhat,Mollahat,111386.6328,248.9984806,447.3386044,7
+248,Bangladesh,BGD,Khulna,Bagerhat,Fakirhat,128110.9453,193.2644822,662.8788895,7
+141,Bangladesh,BGD,Dhaka,Gazipur,Gazipur S.,1198148,415.4450494,2884.010778,6
+305,Bangladesh,BGD,Rajshahi,Bogra,Bogra S.,909739.4375,493.6340797,1842.942931,26
+437,Bangladesh,BGD,Sylhet,Moulvibazar,Kamalganj,351477.875,620.0945001,566.813405,6
+4,Bangladesh,BGD,Barisal,Barisal,Banaripara,150402.9844,151.9578881,989.7675353,6
+354,Bangladesh,BGD,Rajshahi,Rajshahi,Charghat,242527.4063,209.602239,1157.084044,6
+318,Bangladesh,BGD,Rajshahi,Jaipurhat,Khetlal,143509.7031,187.3988999,765.798002,6
+30,Bangladesh,BGD,Barisal,Patuakhali,Kalapara,220090.25,508.8428986,432.5308472,9
+353,Bangladesh,BGD,Rajshahi,Rajshahi,Boalia,389078.125,128.0536594,3038.399112,6
+195,Bangladesh,BGD,Dhaka,Narshingdi,Narsingdi S.,672429.375,255.7568284,2629.17467,6
+326,Bangladesh,BGD,Rajshahi,Naogaon,Niamatpur,273144.3125,541.9487328,504.0039693,6
+253,Bangladesh,BGD,Khulna,Bagerhat,Rampal,178900.5469,370.8647037,482.3876338,6
+334,Bangladesh,BGD,Rajshahi,Natore,Lalpur,209691.4063,281.9742108,743.654555,6
+171,Bangladesh,BGD,Dhaka,Madaripur,Kalkini,310314.4063,351.3420936,883.225813,9
+184,Bangladesh,BGD,Dhaka,Munshigonj,Munshiganj S.,371103,199.5702887,1859.510263,1
+267,Bangladesh,BGD,Khulna,Jhenaidah,Jhenaidaha S.,483366.3125,550.4516044,878.126812,20
+199,Bangladesh,BGD,Dhaka,Nasirabad,Bhaluka,399244.6875,525.354059,759.9535601,6
+202,Bangladesh,BGD,Dhaka,Nasirabad,Gauripur,281704.3438,271.148145,1038.931481,6
+286,Bangladesh,BGD,Khulna,Kustia,Kushtia S.,541631.75,386.9792217,1399.640393,15
+161,Bangladesh,BGD,Dhaka,Kishoreganj,Hossainpur,199006.2656,141.1197723,1410.194067,6
+427,Bangladesh,BGD,Rangpur,Thakurgaon,Thakurgaon S.,622562.1875,811.6880011,766.9969085,17
+84,Bangladesh,BGD,Chittagong,Comilla,Laksam,825647.5,519.8719946,1588.174606,4
+213,Bangladesh,BGD,Dhaka,Netrakona,Durgapur,245536.2656,352.7363791,696.0899986,6
+414,Bangladesh,BGD,Rangpur,Panchagarh,Tentulia,145697.5625,252.1408237,577.8420183,6
+279,Bangladesh,BGD,Khulna,Khulna,Phultala,92039.05469,81.36129673,1131.238788,1
+411,Bangladesh,BGD,Rangpur,Panchagarh,Boda,356260.5938,538.4971596,661.5830509,6
+21,Bangladesh,BGD,Barisal,Borgona,Betagi,161234.6875,193.5696379,832.9544303,6
+38,Bangladesh,BGD,Barisal,Pirojpur,Pirojpur S.,318537.3125,297.3317554,1071.319517,12
+273,Bangladesh,BGD,Khulna,Khulna,Dacope,132585.4219,879.509931,150.7492039,4
+275,Bangladesh,BGD,Khulna,Khulna,Dumuria,211635.6094,535.5972485,395.1394634,9
+338,Bangladesh,BGD,Rajshahi,Nawabganj,Gomastapur,358294.7813,389.5409224,919.7872692,4
+232,Bangladesh,BGD,Dhaka,Sherpur,Nalitabari,306138.375,404.9009696,756.082099,6
+79,Bangladesh,BGD,Chittagong,Comilla,Chauddagram,474265.0625,326.8398106,1451.062714,13
+390,Bangladesh,BGD,Rangpur,Kurigram,Bhurungamari,239317.2813,286.0603668,836.5971278,6
+247,Bangladesh,BGD,Khulna,Bagerhat,Chitalmari,91185.36719,165.9871056,549.3521131,6
+358,Bangladesh,BGD,Rajshahi,Rajshahi,Paba,444067.125,293.1365563,1514.881428,1
+105,Bangladesh,BGD,Chittagong,Khagrachari,Panchhari,88709.65625,590.8061505,150.1501908,3
+393,Bangladesh,BGD,Rangpur,Kurigram,Kurigram S.,306307.3125,340.8139669,898.7522292,7
+379,Bangladesh,BGD,Rangpur,Dinajpur,Khansama,174382.5625,225.8042526,772.2731548,6
+127,Bangladesh,BGD,Dhaka,Dhaka,Dhamrai,509836.9375,360.5758212,1413.952094,6
+134,Bangladesh,BGD,Dhaka,Faridpur,Bhanga,243493.5156,241.881545,1006.664298,6
+385,Bangladesh,BGD,Rangpur,Gaibanda,Palashbari,269917.3438,228.4770541,1181.376155,7
+297,Bangladesh,BGD,Khulna,Shatkhira,Assasuni,236994.1719,322.5303574,734.7964817,5
+125,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Rajasthali,83171.20312,341.3633076,243.6442384,6
+111,Bangladesh,BGD,Chittagong,Noakhali,Begumganj,938763.75,501.9565425,1870.209212,9
+80,Bangladesh,BGD,Chittagong,Comilla,Comilla S.,767024.125,327.5345148,2341.811596,14
+69,Bangladesh,BGD,Chittagong,Chittagong,Patiya,965778.75,378.6985209,2550.257518,25
+85,Bangladesh,BGD,Chittagong,Comilla,Muradnagar,596002.625,424.3819995,1404.401284,5
+65,Bangladesh,BGD,Chittagong,Chittagong,Hathazari,159071.7813,288.0708696,552.196692,11
+460,Bangladesh,BGD,Sylhet,Sylhet,Kanaighat,365855.8125,488.1923958,749.4090765,7
+271,Bangladesh,BGD,Khulna,Jhenaidah,Shailkupa,393681.0625,441.5192063,891.6510469,6
+151,Bangladesh,BGD,Dhaka,Jamalpur,Baksiganj,303216.2188,329.148857,921.2130388,6
+435,Bangladesh,BGD,Sylhet,Hobiganj,Nabiganj,395370.125,517.4573173,764.0632604,6
+291,Bangladesh,BGD,Khulna,Magura,Sreepur,192814.4531,225.1804048,856.2665712,6
+371,Bangladesh,BGD,Rangpur,Dinajpur,Birampur,158953.0781,234.6409822,677.4310124,6
+319,Bangladesh,BGD,Rajshahi,Jaipurhat,Panchbibi,250028.125,332.0406391,753.0045891,9
+445,Bangladesh,BGD,Sylhet,Sun Amgonj,Dharampasha,465459.25,550.3817317,845.7025791,5
+440,Bangladesh,BGD,Sylhet,Moulvibazar,Rajnagar,227613.4688,405.8798957,560.7902022,5
+448,Bangladesh,BGD,Sylhet,Sun Amgonj,Jamalganj,577191.625,544.7856718,1059.483857,6
+154,Bangladesh,BGD,Dhaka,Jamalpur,Jamalpur S.,750193.1875,645.6899046,1161.847478,14
+431,Bangladesh,BGD,Sylhet,Hobiganj,Chunarughat,365279.5938,600.9690096,607.8176877,5
+51,Bangladesh,BGD,Chittagong,Brahmanbaria,Nasirnagar,421603.875,373.4898185,1128.82294,6
+43,Bangladesh,BGD,Chittagong,Bandarbon,Rowangghhari,39068.40625,598.4932158,65.27794338,5
+378,Bangladesh,BGD,Rangpur,Dinajpur,Kaharole,160749.4375,258.5304091,621.7815462,5
+453,Bangladesh,BGD,Sylhet,Sylhet,Beanibazar,361469.9688,306.8625027,1177.954183,5
+321,Bangladesh,BGD,Rajshahi,Naogaon,Badalgachhi,230818.5938,269.6396262,856.0262339,5
+377,Bangladesh,BGD,Rangpur,Dinajpur,Hakimpur,97654.45312,127.8927619,763.5651281,5
+266,Bangladesh,BGD,Khulna,Jhenaidah,Harinakunda,215406,267.1963733,806.1711217,5
+454,Bangladesh,BGD,Sylhet,Sylhet,Bishwanath,312969.4375,258.0231942,1212.950791,5
+50,Bangladesh,BGD,Chittagong,Brahmanbaria,Nabinagar,543632.9375,415.6395136,1307.943349,10
+395,Bangladesh,BGD,Rangpur,Kurigram,Phulbari,163647.9219,199.5723181,819.9930906,6
+452,Bangladesh,BGD,Sylhet,Sylhet,Balaganj,467857.6875,480.783149,973.1158184,5
+363,Bangladesh,BGD,Rajshahi,Sirajgonj,Kamarkhanda,176219.3125,116.5822483,1511.544983,5
+357,Bangladesh,BGD,Rajshahi,Rajshahi,Mohanpur,183165.4688,197.2619618,928.5392228,5
+76,Bangladesh,BGD,Chittagong,Comilla,Brahmanpara,211522.4375,151.2240538,1398.735401,5
+447,Bangladesh,BGD,Sylhet,Sun Amgonj,Jagannathpur,360384,453.4613455,794.7402872,5
+325,Bangladesh,BGD,Rajshahi,Naogaon,Naogaon S.,403199.375,344.1028565,1171.740854,5
+52,Bangladesh,BGD,Chittagong,Brahmanbaria,Sarail,420662.9688,249.8116396,1683.920611,5
+36,Bangladesh,BGD,Barisal,Pirojpur,Nazirpur,167499.5313,259.8889278,644.504299,5
+285,Bangladesh,BGD,Khulna,Kustia,Kumarkhali,352967.1563,404.6800819,872.2128219,5
+160,Bangladesh,BGD,Dhaka,Kishoreganj,Bhairab,331286.5,140.4517976,2358.720255,5
+235,Bangladesh,BGD,Dhaka,Tangail,Basail,190446.5781,191.2207521,995.9514124,5
+438,Bangladesh,BGD,Sylhet,Moulvibazar,Kulaura,612724,861.0229367,711.6233191,5
+392,Bangladesh,BGD,Rangpur,Kurigram,Chilmari,77174.96094,118.8065272,649.5851933,5
+415,Bangladesh,BGD,Rangpur,Rongpur,Badarganj,324840.875,375.4469406,865.2111388,11
+315,Bangladesh,BGD,Rajshahi,Jaipurhat,Akkelpur,154458.5,170.1398905,907.83237,5
+225,Bangladesh,BGD,Dhaka,Shariatpur,Bhedarganj,264055.0938,343.3838908,768.9792702,7
+413,Bangladesh,BGD,Rangpur,Panchagarh,Panchagarh S.,194079.1719,294.8143802,658.3097193,5
+217,Bangladesh,BGD,Dhaka,Netrakona,Madan,306918.3125,288.1207175,1065.24208,5
+422,Bangladesh,BGD,Rangpur,Rongpur,Taraganj,156677.9688,168.1766281,931.6274833,5
+68,Bangladesh,BGD,Chittagong,Chittagong,Mirsharai,536089.625,673.7703674,795.6562814,5
+175,Bangladesh,BGD,Dhaka,Manikgonj,Daulatpur,171679.9375,236.7645149,725.1083955,5
+382,Bangladesh,BGD,Rangpur,Dinajpur,Phulbari,134988.4063,244.5440835,552.0002951,5
+10,Bangladesh,BGD,Barisal,Barisal,Wazirpur,257270.625,294.7863903,872.7357621,5
+429,Bangladesh,BGD,Sylhet,Hobiganj,Bahubal,213868.7813,282.7666034,756.3438491,5
+196,Bangladesh,BGD,Dhaka,Narshingdi,Palash,243457.7031,110.9806598,2193.694861,5
+360,Bangladesh,BGD,Rajshahi,Rajshahi,Tanore,231177.3438,363.0705414,636.7284519,3
+164,Bangladesh,BGD,Dhaka,Kishoreganj,Katiadi,395689.2188,265.5773293,1489.92092,5
+9,Bangladesh,BGD,Barisal,Barisal,Muladi,197294.4688,276.8346474,712.6798275,5
+170,Bangladesh,BGD,Dhaka,Kishoreganj,Tarail,241954.0313,169.3560999,1428.670307,4
+49,Bangladesh,BGD,Chittagong,Brahmanbaria,Kasba,372719.3125,262.6458305,1419.094724,2
+412,Bangladesh,BGD,Rangpur,Panchagarh,Debiganj,242351.0156,375.8537419,644.8013911,4
+183,Bangladesh,BGD,Dhaka,Munshigonj,Lohajang,168154.1094,157.008073,1070.990212,4
+192,Bangladesh,BGD,Dhaka,Naray Angonj,Sonargaon,415689,201.954682,2058.328115,4
+274,Bangladesh,BGD,Khulna,Khulna,Dighalia,492251.125,97.66590074,5040.153434,12
+124,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Nannerchar,48766.3125,358.2284326,136.131887,4
+120,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Juraichhari,29769.60352,526.3899442,56.55427853,4
+419,Bangladesh,BGD,Rangpur,Rongpur,Pirgachha,369530.125,337.9497807,1093.446855,9
+442,Bangladesh,BGD,Sylhet,Sun Amgonj,Bishwamvarpur,229736.5625,238.3841698,963.7240707,4
+106,Bangladesh,BGD,Chittagong,Khagrachari,Ramgarh,81608.64062,407.3940777,200.318672,4
+236,Bangladesh,BGD,Dhaka,Tangail,Bhuapur,249228.5938,299.614698,831.8303321,4
+372,Bangladesh,BGD,Rangpur,Dinajpur,Birganj,307567.0938,506.8169056,606.8603678,5
+99,Bangladesh,BGD,Chittagong,Khagrachari,Dighinala,93310.16406,1018.969631,91.57305698,4
+94,Bangladesh,BGD,Chittagong,Feni,Chhagalnaiya,301946.1563,310.9048545,971.1850807,4
+364,Bangladesh,BGD,Rajshahi,Sirajgonj,Kazipur,299614.2813,440.5140683,680.1469075,
+6,Bangladesh,BGD,Barisal,Barisal,Gaurnadi,194764.0313,180.4155174,1079.530376,4
+284,Bangladesh,BGD,Khulna,Kustia,Khoksa,136912.3125,116.8331313,1171.862048,4
+206,Bangladesh,BGD,Dhaka,Nasirabad,Mymensingh S.,862523.8125,463.1021292,1862.491572,6
+55,Bangladesh,BGD,Chittagong,Chandpur,Haimchar,198359.2969,67.42038473,2942.126445,4
+71,Bangladesh,BGD,Chittagong,Chittagong,Raozan,392894.625,284.6380051,1380.330869,10
+320,Bangladesh,BGD,Rajshahi,Naogaon,Atrai,172871.8594,300.0884187,576.0697468,4
+243,Bangladesh,BGD,Dhaka,Tangail,Nagarpur,309129.25,304.0118973,1016.832738,12
+327,Bangladesh,BGD,Rajshahi,Naogaon,Patnitala,251276.3594,460.7032823,545.4190779,4
+455,Bangladesh,BGD,Sylhet,Sylhet,Companiganj,195394.6875,310.7108051,628.8635101,4
+355,Bangladesh,BGD,Rajshahi,Rajshahi,Durgapur,43635.67188,237.7346444,183.5478039,4
+362,Bangladesh,BGD,Rajshahi,Sirajgonj,Chauhali,176083.125,265.4284069,663.392163,4
+70,Bangladesh,BGD,Chittagong,Chittagong,Rangunia,386379.1875,400.1171159,965.6652318,6
+19,Bangladesh,BGD,Barisal,Borgona,Bamna,72003,92.7427137,776.3736592,4
+407,Bangladesh,BGD,Rangpur,Nilphamari,Kishoreganj,406324.75,322.5837556,1259.594579,11
+142,Bangladesh,BGD,Dhaka,Gazipur,Kaliakair,429321.5625,370.9077837,1157.488684,4
+140,Bangladesh,BGD,Dhaka,Faridpur,Sadarpur,226724.3125,349.3833338,648.9270969,4
+138,Bangladesh,BGD,Dhaka,Faridpur,Madhukhali,207779.5625,261.9511851,793.1995513,4
+322,Bangladesh,BGD,Rajshahi,Naogaon,Dhamoirhat,210055.8594,389.2753213,539.6074395,8
+156,Bangladesh,BGD,Dhaka,Jamalpur,Melandaha,356594.4063,292.5006276,1219.123559,4
+146,Bangladesh,BGD,Dhaka,Gopalgonj,Gopalganj S.,360022.1875,455.8617655,789.761754,17
+133,Bangladesh,BGD,Dhaka,Faridpur,Alfadanga,96086.5,122.4845351,784.4786279,4
+166,Bangladesh,BGD,Dhaka,Kishoreganj,Kuliarchar,204497.3125,120.2945788,1699.971143,4
+323,Bangladesh,BGD,Rajshahi,Naogaon,Mahadevpur,314988.625,475.1479396,662.9274774,5
+324,Bangladesh,BGD,Rajshahi,Naogaon,Manda,393200.9375,494.5924291,794.9999118,4
+190,Bangladesh,BGD,Dhaka,Naray Angonj,Narayanganj S.,1284883,130.0147547,9882.593735,5
+317,Bangladesh,BGD,Rajshahi,Jaipurhat,Kalai,149745.0938,192.2616615,778.860916,3
+155,Bangladesh,BGD,Dhaka,Jamalpur,Madarganj,285057.125,293.4449102,971.4161504,3
+242,Bangladesh,BGD,Dhaka,Tangail,Mirzapur,211650.2188,440.5679708,480.4030996,
+46,Bangladesh,BGD,Chittagong,Brahmanbaria,Akhaura,191124.7813,104.3246487,1832.019409,3
+423,Bangladesh,BGD,Rangpur,Thakurgaon,Baliadangi,208841.5,344.4508939,606.3026797,6
+177,Bangladesh,BGD,Dhaka,Manikgonj,Harirampur,184775.7344,315.2036337,586.2106735,3
+302,Bangladesh,BGD,Khulna,Shatkhira,Shyamnagar,340597.0313,1799.930916,189.2278355,3
+34,Bangladesh,BGD,Barisal,Pirojpur,Kawkhali,83613.25,105.4692648,792.773612,8
+298,Bangladesh,BGD,Khulna,Shatkhira,Debhata,120881.2813,202.6568619,596.4825475,3
+54,Bangladesh,BGD,Chittagong,Chandpur,Faridganj,470795.125,277.0859175,1699.094379,3
+281,Bangladesh,BGD,Khulna,Khulna,Terokhada,98279.32031,250.4101527,392.4733852,3
+257,Bangladesh,BGD,Khulna,Choua Danga,Jibannagar,202837.7031,246.3753715,823.2872542,3
+249,Bangladesh,BGD,Khulna,Bagerhat,Kachua,64751.10938,136.4230155,474.6347904,3
+98,Bangladesh,BGD,Chittagong,Feni,Sonagazi,253111.9375,223.860278,1130.669272,3
+388,Bangladesh,BGD,Rangpur,Gaibanda,Sughatta,283867.4375,278.2062258,1020.348976,3
+459,Bangladesh,BGD,Sylhet,Sylhet,Jaintiapur,154743.4375,249.7924147,619.4881365,3
+67,Bangladesh,BGD,Chittagong,Chittagong,Lohagara,337786.7188,271.4275614,1244.482016,
+66,Bangladesh,BGD,Chittagong,Chittagong,Kotwali,1630819.25,130.9508774,12453.67181,52
+158,Bangladesh,BGD,Dhaka,Kishoreganj,Astagram,642009.375,360.7008197,1779.894416,3
+73,Bangladesh,BGD,Chittagong,Chittagong,Satkania,477884.9063,334.1776771,1430.032402,7
+230,Bangladesh,BGD,Dhaka,Sherpur,Jhenaigati,188262.9375,256.5015907,733.9640156,3
+109,Bangladesh,BGD,Chittagong,Lakshmipur,Ramganj,326708.8125,195.5577065,1670.651689,3
+110,Bangladesh,BGD,Chittagong,Lakshmipur,Ramgati,547609.1875,422.0084882,1297.626002,3
+7,Bangladesh,BGD,Barisal,Barisal,Hizla,182999.6719,244.9997508,746.9381958,2
+409,Bangladesh,BGD,Rangpur,Nilphamari,Saidpur,289392.4375,149.3372849,1937.844508,3
+176,Bangladesh,BGD,Dhaka,Manikgonj,Ghior,167103.7188,175.4854709,952.2367743,3
+119,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Belaichhari,37475.29688,1210.202361,30.96614095,3
+2,Bangladesh,BGD,Barisal,Barisal,Babuganj,168497.0938,198.8165744,847.5002363,3
+335,Bangladesh,BGD,Rajshahi,Natore,Natore S.,464895.5625,484.6449343,959.2498129,8
+173,Bangladesh,BGD,Dhaka,Madaripur,Rajoir,220664.6563,272.5955987,809.4945675,3
+150,Bangladesh,BGD,Dhaka,Gopalgonj,Tungipara,128160.5859,196.2875819,652.9225369,3
+333,Bangladesh,BGD,Rajshahi,Natore,Gurudaspur,237256.6719,252.0198789,941.4204663,3
+331,Bangladesh,BGD,Rajshahi,Natore,Bagatipara,147508.9375,167.7130102,879.5318701,3
+449,Bangladesh,BGD,Sylhet,Sun Amgonj,Sullah,618346.4375,316.3186182,1954.821506,
+330,Bangladesh,BGD,Rajshahi,Naogaon,Sapahar,166948.25,298.6908871,558.9331889,3
+238,Bangladesh,BGD,Dhaka,Tangail,Ghatail,470155.9375,548.5979687,857.0136317,13
+347,Bangladesh,BGD,Rajshahi,Pabna,Ishwardi,385658.5625,346.5302042,1112.914712,3
+42,Bangladesh,BGD,Chittagong,Bandarbon,Naikhongchhari,68610.46094,581.3088331,118.0275562,3
+44,Bangladesh,BGD,Chittagong,Bandarbon,Ruma,35263.74609,758.8780988,46.46826169,3
+162,Bangladesh,BGD,Dhaka,Kishoreganj,Itna,921365.8125,460.7398424,1999.752849,2
+221,Bangladesh,BGD,Dhaka,Rajbari,Baliakandi,232150.625,293.8420275,790.0524883,2
+168,Bangladesh,BGD,Dhaka,Kishoreganj,Nikli,403337.6875,235.4732856,1712.880875,2
+218,Bangladesh,BGD,Dhaka,Netrakona,Mohanganj,318743.3438,308.8179379,1032.139991,2
+339,Bangladesh,BGD,Rajshahi,Nawabganj,Nachole,206124.9219,349.5185485,589.7395797,5
+310,Bangladesh,BGD,Rajshahi,Bogra,Nandigram,211493.5781,330.2355667,640.4324653,4
+17,Bangladesh,BGD,Barisal,Bhola,Tazumuddin,60618.58594,78.78812009,769.3873882,2
+15,Bangladesh,BGD,Barisal,Bhola,Lalmohan,325739.25,315.6935989,1031.82089,2
+270,Bangladesh,BGD,Khulna,Jhenaidah,Maheshpur,392112.4063,528.3843911,742.0968766,11
+348,Bangladesh,BGD,Rajshahi,Pabna,Pabna S.,591802.125,463.9827743,1275.482966,2
+211,Bangladesh,BGD,Dhaka,Netrakona,Atpara,188385.2031,237.8780575,791.9402282,2
+428,Bangladesh,BGD,Sylhet,Hobiganj,Ajmiriganj,253393.1719,257.5085272,984.0185666,2
+432,Bangladesh,BGD,Sylhet,Hobiganj,Habiganj S.,369578.375,300.9950283,1227.855414,2
+40,Bangladesh,BGD,Chittagong,Bandarbon,Bandarban S.,99615.78125,555.0500771,179.4717006,2
+433,Bangladesh,BGD,Sylhet,Hobiganj,Lakhai,228740.5938,229.6339828,996.1095084,2
+3,Bangladesh,BGD,Barisal,Barisal,Bakerganj,367929.3125,418.8496696,878.4280833,2
+451,Bangladesh,BGD,Sylhet,Sun Amgonj,Tahirpur,338227.875,376.8586677,897.4926252,2
+96,Bangladesh,BGD,Chittagong,Feni,Feni S.,489500.8125,265.0807992,1846.609841,9
+104,Bangladesh,BGD,Chittagong,Khagrachari,Matiranga,46296.44141,266.35668,173.813705,
+113,Bangladesh,BGD,Chittagong,Noakhali,Companiganj,245126.8125,291.8302487,839.9636897,5
+115,Bangladesh,BGD,Chittagong,Noakhali,Noakhali S.,1167459.375,1404.741665,831.08475,4
+112,Bangladesh,BGD,Chittagong,Noakhali,Chatkhil,230772.8125,154.771734,1491.052704,2
+122,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Kawkhali,54784.99219,284.7916688,192.3686617,
+63,Bangladesh,BGD,Chittagong,Chittagong,Chandanaish,211045.0625,259.5334438,813.1709709,2
+16,Bangladesh,BGD,Barisal,Bhola,Manpura,86948.60938,188.326773,461.6901145,1
+167,Bangladesh,BGD,Dhaka,Kishoreganj,Mithamain,702972.375,260.1727328,2701.944848,
+172,Bangladesh,BGD,Dhaka,Madaripur,Madaripur S.,363707.4375,351.9350306,1033.450512,7
+179,Bangladesh,BGD,Dhaka,Manikgonj,Saturia,195798.7188,178.0068303,1099.950594,5
+193,Bangladesh,BGD,Dhaka,Narshingdi,Belabo,200159.9688,138.8084109,1441.987323,
+207,Bangladesh,BGD,Dhaka,Nasirabad,Nandail,470789.8125,393.6710055,1195.896589,9
+209,Bangladesh,BGD,Dhaka,Nasirabad,Phulpur,697132.375,724.8738039,961.7292986,11
+212,Bangladesh,BGD,Dhaka,Netrakona,Barhatta,233381.0156,267.3498447,872.9424022,3
+220,Bangladesh,BGD,Dhaka,Netrakona,Purbadhala,405603.875,427.6365055,948.4781345,9
+8,Bangladesh,BGD,Barisal,Barisal,Mehendiganj,373513.8438,405.3596612,921.4381191,12
+216,Bangladesh,BGD,Dhaka,Netrakona,Khaliajuri,740958.8125,349.4706891,2120.231641,2
+278,Bangladesh,BGD,Khulna,Khulna,Paikgachha,183389.5313,413.7919331,443.1926207,12
+265,Bangladesh,BGD,Khulna,Jessore,Sharsha,394612.5938,394.5787635,1000.085738,10
+280,Bangladesh,BGD,Khulna,Khulna,Rupsa,113095.6563,102.6989727,1101.234543,4
+289,Bangladesh,BGD,Khulna,Magura,Mohammadpur,228295.0625,278.386831,820.0641592,
+5,Bangladesh,BGD,Barisal,Barisal,Barisal S.,473381.875,286.6787772,1651.262363,14
+301,Bangladesh,BGD,Khulna,Shatkhira,Satkhira S.,397936.5313,438.2704421,907.970269,14
+13,Bangladesh,BGD,Barisal,Bhola,Charfasson,489249.9375,764.3473933,640.088449,9
+316,Bangladesh,BGD,Rajshahi,Jaipurhat,Joypurhat S.,305819.9688,298.5593843,1024.318728,9
+329,Bangladesh,BGD,Rajshahi,Naogaon,Raninagar,230960.5781,319.5244774,722.8259318,7
+340,Bangladesh,BGD,Rajshahi,Nawabganj,Nawabganj S.,325024.25,567.9686513,572.2573759,5
+342,Bangladesh,BGD,Rajshahi,Pabna,Atgharia,164023.5313,224.7212145,729.8978496,
+351,Bangladesh,BGD,Rajshahi,Rajshahi,Bagha,221446.8438,238.0685348,930.1810673,
+352,Bangladesh,BGD,Rajshahi,Rajshahi,Bagmara,372946.8125,442.1851735,843.4177237,
+103,Bangladesh,BGD,Chittagong,Khagrachari,Manikchhari,54393.78125,179.7325675,302.6373128,2
+376,Bangladesh,BGD,Rangpur,Dinajpur,Ghoraghat,117818.1641,178.9354538,658.4394629,
+384,Bangladesh,BGD,Rangpur,Gaibanda,Gobindaganj,571714.5,575.0923035,994.126502,
+12,Bangladesh,BGD,Barisal,Bhola,Burhanuddin,322940.625,312.7201533,1032.682485,10
+396,Bangladesh,BGD,Rangpur,Kurigram,Rajarhat,209557.1406,216.6920908,967.0733244,
+399,Bangladesh,BGD,Rangpur,Lalmonirhat,Aditmari,248308.3906,234.3702306,1059.470693,
+400,Bangladesh,BGD,Rangpur,Lalmonirhat,Hatibandha,251801.7813,359.1178232,701.1675973,
+11,Bangladesh,BGD,Barisal,Bhola,Bhola S.,438159.6563,327.1854535,1339.17829,7
+276,Bangladesh,BGD,Khulna,Khulna,Kotwali,632080.875,22.63222261,27928.36064,14
+27,Bangladesh,BGD,Barisal,Patuakhali,Bauphal,340018.125,497.527535,683.4156928,8
+456,Bangladesh,BGD,Sylhet,Sylhet,Fenchuganj,135614.6563,126.499281,1072.058712,4
+89,Bangladesh,BGD,Chittagong,Cox's Bazar,Kutubdia,132766,79.67371733,1666.371351,2
+461,Bangladesh,BGD,Sylhet,Sylhet,Sylhet S.,609416.0625,629.1243383,968.6734806,13
+121,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Kaptai,43661.76172,162.5187289,268.6568005,2
+144,Bangladesh,BGD,Dhaka,Gazipur,Kapasia,601558.75,432.4150201,1391.160626,2
+386,Bangladesh,BGD,Rangpur,Gaibanda,Phulchhari,157423.6875,392.619379,400.9575073,2
+130,Bangladesh,BGD,Dhaka,Dhaka,Nawabganj,475862.9375,343.8839865,1383.789174,2
+100,Bangladesh,BGD,Chittagong,Khagrachari,Khagrachhari,221603.7188,309.3317709,716.3949507,2
+101,Bangladesh,BGD,Chittagong,Khagrachari,Lakshmichhari,26210.94531,286.8997344,91.35925261,2
+148,Bangladesh,BGD,Dhaka,Gopalgonj,Kotalipara,245255.7969,430.60777,569.5572954,2
+188,Bangladesh,BGD,Dhaka,Naray Angonj,Araihazar,476801.9375,228.5935566,2085.806549,2
+226,Bangladesh,BGD,Dhaka,Shariatpur,Damudya,124207.4375,107.0284323,1160.5088,2
+152,Bangladesh,BGD,Dhaka,Jamalpur,Dewanganj,187496.8125,241.3607323,776.8322989,2
+337,Bangladesh,BGD,Rajshahi,Nawabganj,Bholahat,135782.1719,153.6398628,883.7691563,2
+197,Bangladesh,BGD,Dhaka,Narshingdi,Raipur,551825.125,390.6709188,1412.506277,1
+397,Bangladesh,BGD,Rangpur,Kurigram,Raomari,246812.1875,307.5420703,802.5314628,1
+116,Bangladesh,BGD,Chittagong,Noakhali,Senbagh,333859.3125,189.5475609,1761.348502,1
+344,Bangladesh,BGD,Rajshahi,Pabna,Bhangura,111526.0156,138.5719501,804.8238876,1
+345,Bangladesh,BGD,Rajshahi,Pabna,Chatmohar,301442.1875,382.08949,788.9308536,1
+403,Bangladesh,BGD,Rangpur,Lalmonirhat,Patgram,240636.6875,307.523534,782.498446,1
+95,Bangladesh,BGD,Chittagong,Feni,Daganbhuiyan,289203.75,171.1030938,1690.23098,1
+227,Bangladesh,BGD,Dhaka,Shariatpur,Gosairhat,168308.0781,250.5703013,671.7000269,1
+356,Bangladesh,BGD,Rajshahi,Rajshahi,Godagari,357607.125,541.7035302,660.152842,1
+45,Bangladesh,BGD,Chittagong,Bandarbon,Thanchi,20432.76562,1103.737066,18.51234886,1
+346,Bangladesh,BGD,Rajshahi,Pabna,Faridpur,136893.7188,177.8240969,769.8265935,1
+359,Bangladesh,BGD,Rajshahi,Rajshahi,Puthia,246829.0156,237.7329818,1038.261556,1
+117,Bangladesh,BGD,Chittagong,Parbattya Chattagram,Bagaichhari,91237.70312,1834.169813,49.74332391,1
+430,Bangladesh,BGD,Sylhet,Hobiganj,Baniachong,466631.0625,591.988119,788.2439656,1
+97,Bangladesh,BGD,Chittagong,Feni,Parshuram,173707.1406,79.75600894,2177.981859,1
+1,Bangladesh,BGD,Barisal,Barisal,Agailjhara,155595.4688,183.9635792,845.7949637,1
+417,Bangladesh,BGD,Rangpur,Rongpur,Kaunia,272587.9688,187.5208034,1453.641216,1
+282,Bangladesh,BGD,Khulna,Kustia,Bheramara,203267.25,181.2628334,1121.395082,1
+215,Bangladesh,BGD,Dhaka,Netrakona,Kendua,260410.1719,407.3955309,639.2072375,1
+200,Bangladesh,BGD,Dhaka,Nasirabad,Dhobaura,238010.2188,335.1938236,710.0674357,1
+457,Bangladesh,BGD,Sylhet,Sylhet,Golabganj,461195.0313,347.3026476,1327.934107,1
+91,Bangladesh,BGD,Chittagong,Cox's Bazar,Ramu,283911.6563,450.3715141,630.3943464,1
+182,Bangladesh,BGD,Dhaka,Munshigonj,Gazaria,157788.4688,169.9371174,928.5109171,5
+370,Bangladesh,BGD,Rangpur,Dinajpur,Biral,288491.25,439.2155135,656.8330151,
+374,Bangladesh,BGD,Rangpur,Dinajpur,Chirirbandar,304046.0625,393.4958898,772.6791318,5
+416,Bangladesh,BGD,Rangpur,Rongpur,Gangachhara,273820.0313,243.275293,1125.556269,4
+153,Bangladesh,BGD,Dhaka,Jamalpur,Islampur,327586.4688,408.7501097,801.4345708,5
+401,Bangladesh,BGD,Rangpur,Lalmonirhat,Kaliganj,291789.2813,293.5826006,993.891602,4
+277,Bangladesh,BGD,Khulna,Khulna,Koyra,158663.4688,1454.017215,109.1207636,6
+60,Bangladesh,BGD,Chittagong,Chittagong,Anwara,340937.375,169.5510863,2010.82389,4
+444,Bangladesh,BGD,Sylhet,Sun Amgonj,Derai,627934.125,502.512454,1249.589179,6
+424,Bangladesh,BGD,Rangpur,Thakurgaon,Haripur,164914.3438,245.9237466,670.5913765,3
+93,Bangladesh,BGD,Chittagong,Cox's Bazar,Ukhia,208494.2813,305.5459971,682.3662663,4
+373,Bangladesh,BGD,Rangpur,Dinajpur,Bochaganj,170124.875,279.9681717,607.6579133,6
+450,Bangladesh,BGD,Sylhet,Sun Amgonj,Sunamganj S.,811443.75,612.2003248,1325.454622,10
+128,Bangladesh,BGD,Dhaka,Dhaka,Dohar,203777.2813,129.4190901,1574.5535,3
+145,Bangladesh,BGD,Dhaka,Gazipur,Sreepur,620602.75,562.283479,1103.718628,8

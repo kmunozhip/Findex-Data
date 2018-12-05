@@ -1,0 +1,4 @@
+"0","#Load Data"
+"0","findexPage1 <- read.xlsx(""findex-data/globalFindexdatabase.xlsx"", sheet=1)"
+"0","#Subseting Data for Asia Only"
+"0","asiaFindex <- subset(findexPage1, X4 %in% c(""East Asia & Pacific (excluding high income)"", ""South Asia""))"

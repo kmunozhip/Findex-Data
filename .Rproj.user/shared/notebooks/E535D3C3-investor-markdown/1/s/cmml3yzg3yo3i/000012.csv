@@ -1,0 +1,7 @@
+"0","p4 <- ggplot(asiaScatter, aes(x=avg_bb, y=avg_imr, color=avg_le)) +"
+"0","  geom_point(size=5)+"
+"0","  geom_smooth(se=FALSE, color=""black"", linetype=""solid"", method=lm) +"
+"0","  scale_color_gradient(low ='dodgerblue', high ='black') +"
+"0","  ggrepel::geom_label_repel(data=asiaScatter, "
+"0","                            aes(label = asiaScatter$country), direction='both', color = 'black')"
+"0","p4"
