@@ -17,7 +17,7 @@ They can be seperated in to two regions
     + Bangladesh
     + Pakistan
     + Sri Lanka
-    + India
+    
 * Southeast Asia
     + Indonesia
     + Vietnam
@@ -25,21 +25,19 @@ They can be seperated in to two regions
     + Malaysia
     + Philippines
     + Cambodia
-    + Myanmar
     
 Country     | iso Code
 ----------- | ------------
 Bangladesh  | BGD
 Pakistan    | PAK 
 Sri Lanka   | LKA
-India*      | IND 
 Indonesia   | IDN
 Vietnam     | VNM
 Thailand    | THA
 Malaysia    | MYS
 Philippines | PHL
 Cambodia    | KHM
-Myanmar     | MMR
+
 ***
 
 ```{r message=FALSE}
@@ -137,7 +135,7 @@ p5
 
 #### Fixed Broadband vs. Fiber Reach (2016)
 
-```{r echo=FALSE, fig.height=8, fig.width=16}
+```{r echo=FALSE, fig.height=6, fig.width=12}
 asiafbfr <- data.frame(country = c('Bangladesh', 'Pakistan', 'Sri Lanka', 'Indonesia', 'Vietnam', 'Thailand', 'Malaysia', 'Philippines', 'Cambodia'),
   fr = c(77, 35, 82, 51, 72, 77, 65, 57, 63))
 asiafbfr <- merge(asiafbfr, asiaBroadband, by.x = "country", by.y = "country", all.x = TRUE)

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544114092921.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2050949834",
+    "id" : "492EB2E1",
+    "lastKnownWriteTime" : 1544137561,
+    "last_content_update" : 1544137561486,
+    "path" : "~/investor-data/data-consolidation.Rmd",
+    "project_path" : "data-consolidation.Rmd",
+    "properties" : {
+        "cursorPosition" : "141,25",
+        "scrollLine" : "125"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

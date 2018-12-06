@@ -1,0 +1,283 @@
+---
+title: 'Asian Development Bank DEMO'
+author: 'Krashaldy Muñoz'
+date: 'December 6, 2018'
+output: html_document
+---
+
+#Investor Statistics Panel Charts
+
+This document contains all of the charts and data used to create the wireframe for the Investment Dashboard for the proposed InfraNav Statistics Panel.
+
+First I need to define the list of countries that will be used for this analysis.
+
+They can be seperated in to two regions
+
+* South Asia
+    + Bangladesh
+    + Pakistan
+    + Sri Lanka
+    
+* Southeast Asia
+    + Indonesia
+    + Vietnam
+    + Thailand
+    + Malaysia
+    + Philippines
+    + Cambodia
+    
+Country     | iso Code
+----------- | ------------
+Bangladesh  | BGD
+Pakistan    | PAK 
+Sri Lanka   | LKA
+Indonesia   | IDN
+Vietnam     | VNM
+Thailand    | THA
+Malaysia    | MYS
+Philippines | PHL
+Cambodia    | KHM
+***
+
+## Required Packages
+
+```{r message=FALSE}
+#Load Required Packages
+library(openxlsx)
+library(ggplot2)
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(magrittr)
+library(wbstats)
+```
+***
+## Data Importation
+
+This is Data for the Regional Branch (International)
+
+```{r message=FALSE}
+#Country Selection
+
+countries <- c('Bangladesh', 'Pakistan', 'Sri Lanka', 'Indonesia', 'Vietnam', 'Thailand', 'Malaysia', 'Philippines', 'Cambodia')
+
+countries_iso <- c('BGD', 'PAK', 'LKA', 'IDN', 'VNM', 'THA', 'MYS', 'PHL', 'KHM')
+
+#Table Creation
+
+asiaFibreach <- read.xlsx('findex-data/Asia_fibreach_dec2018.xlsx', 1)
+  
+asiaRoW <- read.xlsx('findex-data/Asia_RoW.xlsx', 1)
+  
+asiaNetworks <- read.xlsx('findex-data/networks.xlsx', 2)
+
+asiaProviders <- read.csv('findex-data/provider_metrics.csv')
+  
+populatedPlaces <- read.csv('findex-data/populated_places.csv')
+
+wbData <- wb(country = countries_iso,
+             indicator = c('IT.NET.BBND.P2', 'IT.CEL.SETS.P2', 'SP.POP.TOTL', 'SP.RUR.TOTL.ZS', 'SP.DYN.IMRT.IN', 'SP.DYN.LE00.IN'),
+             mrv = 7)
+
+finBase <- read.xlsx('findex-data/globalFindexdatabase.xlsx', 1)
+
+asiaSpectrum <- read.csv('findex-data/spectrum_merged_csv.csv')
+```
+
+This is data for the Subnational Perspective (Bangladesh)
+
+```{r message=FALSE}
+bgdHospCt <- read.csv('findex-data/bangladesh - hospital ct.csv')
+
+bgdHospR <- read.csv('findex-data/bgd_hosp_within5km.csv')
+
+bgdAdm3 <- read.xlsx('findex-data/bgd_adm3.xlsx',1)
+
+bgdFinReach <- read.xlsx('findex-data/bgd_fin_reach.xlsx',1)
+```
+***
+## Data Cleaning
+
+### Selected Asian Countries
+
+```{r echo=FALSE}
+summary(wbData)
+```
+
+#### Regional Donut Chart
+
+```{r echo=FALSE}
+asiaPopulation <- wbData %>% filter(indicator == 'SP.POP.TOTL')
+fiberdata <- asiaFibreach
+fiberdata <- merge(fiberdata, asiaPopulation, by.x = 'ctry', by.y = 'iso3c', all = TRUE)
+fiberdata <- dplyr::select(fiberdata, country, `5.km.reach`, value)
+fiberdata <- fiberdata[-c(3,6,7,11,13),]
+fiberdata <- data.frame(region = 'asia', reach = sum(fiberdata$`5.km.reach`), pop = sum(fiberdata$value)) 
+fiberdata <- dplyr::mutate(fiberdata, 'reach.%' = (reach/pop)*100)
+fiberdata
+
+asiaDonut <- data.frame(count=c(41.62, 58.38), category=c('A', 'B'))
+asiaDonut$fraction = asiaDonut$count / sum(asiaDonut$count)
+asiaDonut = asiaDonut[order(asiaDonut$fraction), ]
+asiaDonut$ymax = cumsum(asiaDonut$fraction)
+asiaDonut$ymin = c(0, head(asiaDonut$ymax, n=-1))
+
+p1 <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)) + 
+  geom_rect(colour="grey30") + 
+  coord_polar(theta="y") + 
+  xlim(c(0, 4)) +
+  theme_bw() +
+  theme(panel.grid=element_blank()) +
+  theme(axis.text=element_blank()) +
+  theme(axis.ticks=element_blank()) +
+  scale_fill_manual(values = c('#e0e0e0','#0D6EB8')) +
+  labs(title="South Asia: Fiber Reach (%)")
+p1
+```
+
+
+#### Fiber Reach by Country
+
+```{r echo=FALSE}
+fiberdata <- asiaFibreach
+asiaPopulation <- wbstats::wb(country = c('BGD', 'PAK', 'LKA', 'IDN', 'VNM', 'THA', 'MYS', 
+                                          'PHL', 'KHM'), 
+                             indicator = 'SP.POP.TOTL', mrv = 1)
+fiberdata <- merge(fiberdata, asiaPopulation, by.x = 'ctry', by.y = 'iso3c', all = TRUE)
+fiberdata <- dplyr::select(fiberdata, country, `5.km.reach`, value)
+fiberdata <- dplyr::mutate(fiberdata, reach_perc = (`5.km.reach`/ value)*100) 
+fiberdata <- fiberdata[-c(3,6,7,11,13),]
+
+fiberchart <- ggplot(fiberdata, aes(x=reorder(country, dplyr::desc(country)), y=reach_perc)) +
+  geom_col(aes(fill=country)) +
+  theme(legend.position = 0) +
+  coord_flip() +
+  geom_hline(yintercept=58.38, color='#0D6EB8', size=1.5) +
+  labs(x='Country', y='5km Fiber Reach (% of the Population)')
+fiberchart
+```
+
+
+#### Spectrum 
+
+```{r echo=FALSE}
+asiaSpectrum <- asiaSpectrum %>% 
+  filter(country %in% countries) %>% 
+  select(country, iso_a3, provider, band_mhz, pairs, allocation, technology, year, src_band, src_pairs)
+
+summary(asiaSpectrum)
+```
+
+
+### Bangladesh
+
+#### Hospital Count by Administrative Layer (bgdHospCt)
+
+```{r}
+#Remove Irrelevant Columns
+bgdHospCt <- bgdHospCt[,c(3:10)]
+
+#Subset Data for Adm1
+bgdHospCt1 <- bgdHospCt %>% 
+  group_by(name_1) %>% 
+  summarise(pop = sum(pop, na.rm = TRUE),
+            area = sum(area, na.rm = TRUE),
+            hosp = sum(hosp_ct, na.rm = TRUE)) %>% 
+  mutate(popden = pop/area)
+
+#Subset Data for Adm2
+bgdHospCt2 <- bgdHospCt %>% 
+  group_by(name_2) %>% 
+  summarise(pop = sum(pop, na.rm = TRUE),
+            area = sum(area, na.rm = TRUE),
+            hosp = sum(hosp_ct, na.rm = TRUE)) %>% 
+  mutate(popden = pop/area) 
+
+#More Granular Table
+bgdHospCt3 <- bgdHospCt[,c(3,2)]
+bgdHospCt3 <- distinct(bgdHospCt3, name_2, .keep_all = TRUE)
+bgdHospCt3 <- merge(bgdHospCt2, bgdHospCt3, by.x='name_2', by.y='name_2', all.x=TRUE)
+
+
+summary(bgdHospCt2)
+str(bgdHospCt2)
+
+b1 <- ggplot(bgdHospCt1, aes(name_1, hosp)) +
+  geom_col()
+b1
+
+b2 <- ggplot(bgdHospCt3, aes(popden, hosp)) +
+  geom_point(aes(color=name_1), size=2)
+b2 
+
+b3 <- ggplot(bgdHospCt3, aes(name_1, hosp)) +
+  geom_point(aes(color=name_1), size=2)
+b3
+
+b4 <- ggplot(bgdHospCt3, aes(name_1, popden)) +
+  geom_point(aes(color=name_1), size=2)
+b4
+```
+
+
+#### Hospitals within 5km of Fiber (bgdHospR)
+
+```{r fig.height=4, fig.width=8}
+#Remove Irrelevant Columns
+
+bDiv1 <- c('Barisal', 'Chittagong', 'Dhaka', 'Khulna', 'Mymensignh', 'Rajshahi', 'Rangpur', 'Sylhet')
+
+bgdHospR <- bgdHospR[,c(7,8,18,20,21)]
+
+bgdHospR1 <- bgdHospR %>% 
+  filter(within_5km == TRUE, adm1_name %in% bDiv1) %>% 
+  group_by(adm1_name) %>% 
+  summarise(hosp_ct = n()) %>% 
+  mutate(within_5km = TRUE)
+
+bgdHospR2 <- bgdHospR %>% 
+  filter(within_5km == FALSE, adm1_name %in% bDiv1) %>% 
+  group_by(adm1_name) %>% 
+  summarise(hosp_ct = n()) %>% 
+  mutate(within_5km = FALSE)
+
+bgdHospR3 <- merge(bgdHospR1, bgdHospR2, by.x='adm1_name', by.y='adm1_name', all.x=TRUE)
+bgdHospR3 <- bind_rows(bgdHospR1, bgdHospR2)
+bgdHospR3 
+
+b5 <- ggplot(bgdHospR3, aes(adm1_name, hosp_ct)) +
+  geom_col(aes(fill=within_5km))
+b5
+
+```
+
+
+#### bgdAdm3
+
+```{r}
+#Remove Irrelevant Columns
+bgdAdm3 <- bgdAdm3[,-c(1,2,14)]
+
+summary(bgdAdm3)
+str(bgdAdm3)
+```
+
+
+#### Population within 1km of a bank and/or Mobile Money Agent (bgdFinReach)
+
+```{r fig.height=3, fig.width=6}
+bgdFinReach <- mutate(bgdFinReach,
+                      perc_bank = (pop.with.1km.of.bank/total.pop)*100,
+                      perc_mma = (pop.with.1km.of.a.mobile.money.agent/total.pop)*100,
+                      no_access= 100 - (perc_bank + perc_mma))
+bgdFinReach <- bgdFinReach %>% gather(type, value, 5:7) %>% select(adm1_name, type, value)
+
+bfinal <- ggplot(bgdFinReach, aes(reorder(adm1_name, desc(adm1_name)), value))+
+  geom_col(aes(fill=type)) +
+  coord_flip() +
+  labs(x = 'Country', y='% of Population') +
+  scale_y_continuous(limits = c(0,100), expand = c(0,0))
+bfinal
+#bgdFinReach
+```
+
