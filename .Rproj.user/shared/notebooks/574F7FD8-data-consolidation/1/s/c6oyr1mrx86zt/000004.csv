@@ -1,0 +1,8 @@
+"0","sub1 <- ggplot(asiaProviders, aes(x=reorder(provider, desc(provider)), y=fr)) +"
+"0","  geom_bar(stat = ""identity"") +"
+"0","  coord_flip() +"
+"0","  labs(x='Provider' , y='Fiber Reach (% of Population)') +"
+"0","  scale_y_continuous(limits = c(0,100), expand = c(0,1))"
+"0","sub1"
+"2","Error in reorder(provider, desc(provider)) : object 'provider' not found
+"

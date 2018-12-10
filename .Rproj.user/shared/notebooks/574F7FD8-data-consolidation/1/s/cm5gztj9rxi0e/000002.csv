@@ -1,0 +1,4 @@
+"0","asiaProviders <- asiaProviders %>% "
+"0","  subset(country == 'Bangladesh')"
+"0","asiaProviders <- asiaProviders[,4:6]"
+"0","asiaProviders"

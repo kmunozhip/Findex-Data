@@ -359,16 +359,20 @@ p6 <- ggplot(asiaIMR, aes(x = date, y = value, color = country)) +
   geom_line(aes(group = country), size = 1.2) +
   geom_point() +
   #scale_color_brewer(palette = 'Set2') +
-  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0)) +
-  labs(x='Year', y='Infant Mortality Rate per 100 births', title='IMR by Country (2012-2016)')
+  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0.5)) +
+  labs(x='Year', y='Infant Mortality Rate (per 1,000 births)') +
+  facet_wrap(. ~ country, scales = "fixed", nrow = 4) +
+  theme_bw() + theme(legend.position = 0)
 p6
 
 p7 <- ggplot(asiaLE, aes(x = date, y = value, color = country)) +
   geom_line(aes(group = country), size = 1.2) +
   geom_point() +
   #scale_color_brewer(palette = 'Set2') +
-  scale_x_discrete(limits = c('2012','2013', '2014', '2015', '2016'), expand = c(0,0)) +
-  labs(x='Year', y='Life Expectancy per 100 people', title='LE by Country (2012-2016)')
+  scale_x_discrete(limits = c('2012','2013', '2014', '2015', '2016'), expand = c(0,0.5)) +
+  labs(x='Year', y='Life Expectancy (Years)') +
+  facet_wrap(. ~ country, scales = "fixed", nrow = 4) +
+  theme_bw() + theme(legend.position = 0)
 p7
 ```
 

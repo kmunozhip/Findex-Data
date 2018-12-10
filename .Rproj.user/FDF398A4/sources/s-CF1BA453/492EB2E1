@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2050949834",
+    "hash" : "926696249",
     "id" : "492EB2E1",
-    "lastKnownWriteTime" : 1544137561,
-    "last_content_update" : 1544137561486,
+    "lastKnownWriteTime" : 1544480058,
+    "last_content_update" : 1544480058045,
     "path" : "~/investor-data/data-consolidation.Rmd",
     "project_path" : "data-consolidation.Rmd",
     "properties" : {
-        "cursorPosition" : "141,25",
-        "scrollLine" : "125"
+        "cursorPosition" : "744,19",
+        "scrollLine" : "725"
     },
     "relative_order" : 3,
     "source_on_save" : false,
