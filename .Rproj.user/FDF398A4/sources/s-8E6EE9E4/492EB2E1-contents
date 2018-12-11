@@ -103,18 +103,13 @@ bgdHealth <- read.csv('findex-data/bgd_health2.csv')
 
 ### Selected Asian Countries: Connectivity
 
-```{r echo=FALSE}
-
-```
-
 #### Regional Donut Chart
 
 ```{r echo=FALSE}
-asiaPopulation <- wbData %>% filter(indicator == 'SP.POP.TOTL')
-fiberdata <- asiaFibreach
+asiaPopulation <- wbData %>% filter(indicatorID == 'SP.POP.TOTL', date == '2017')
+fiberdata <- asiaFibreach %>% filter(ctry %in% countries_iso)
 fiberdata <- merge(fiberdata, asiaPopulation, by.x = 'ctry', by.y = 'iso3c', all = TRUE)
-fiberdata <- dplyr::select(fiberdata, country, `5.km.reach`, value)
-fiberdata <- fiberdata[-c(3,6,7,11,13),]
+fiberdata <- select(fiberdata, country, `5.km.reach`, value)
 fiberdata <- data.frame(region = 'asia', reach = sum(fiberdata$`5.km.reach`), pop = sum(fiberdata$value)) 
 fiberdata <- dplyr::mutate(fiberdata, 'reach.%' = (reach/pop)*100)
 fiberdata
@@ -125,7 +120,7 @@ asiaDonut = asiaDonut[order(asiaDonut$fraction), ]
 asiaDonut$ymax = cumsum(asiaDonut$fraction)
 asiaDonut$ymin = c(0, head(asiaDonut$ymax, n=-1))
 
-p1 <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)) + 
+donut <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)) + 
   geom_rect(colour="grey30") + 
   coord_polar(theta="y") + 
   xlim(c(0, 4)) +
@@ -133,8 +128,9 @@ p1 <- ggplot(asiaDonut, aes(fill=category, ymax=ymax, ymin=ymin, xmax=4, xmin=3)
   theme(panel.grid=element_blank()) +
   theme(axis.text=element_blank()) +
   theme(axis.ticks=element_blank()) +
+  theme(legend.position = 0) +
   scale_fill_manual(values = c('#e0e0e0','#0D6EB8'))
-p1
+donut
 ```
 
 
@@ -185,14 +181,17 @@ p3 <- ggplot(asiaBroadband, aes(x = date, y = value, color = country)) +
   geom_line(aes(group = country), size = 1.2) +
   geom_point() +
   #scale_color_brewer(palette = 'Set2') +
-  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0)) +
-  labs(x = 'Year', y = 'Subscriptions per 100 peple', title = 'Fixed BroadBand Subs. by Country (2012-2016)')
+  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), 
+                   expand = c(0,0.5)) +
+  labs(x = 'Year', y = 'Subscriptions per 100 peple') +
+  facet_wrap(. ~ country, scales = "fixed") +
+  theme_bw() + theme(legend.position = 0)
 p3
 ```
 
 #### Fiber Reach vs. Fixed Broadband (2016)
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.height=4, fig.width=8}
 fiberdata <- fiberdata[,c(1,4)]
 asiafbfr <- merge(fiberdata, asiaBroadband, by.x = "country", by.y = "country", all.x = TRUE)
 asiafbfr <- asiafbfr %>% filter (date == '2016')
@@ -201,7 +200,7 @@ asiafbfr
 
 p4 <- ggplot(asiafbfr, aes(reach_perc, value)) +
   geom_point(aes(color=country), size=4) +
-  geom_smooth(method = lm, se = FALSE, color='black') +
+  geom_smooth(method = lm, se = FALSE, color='grey') +
   labs(x = 'Fiber Reach (% of Population)', y = 'FB Subscriptions (Per 100 people)') +
   theme_bw()
 p4
@@ -229,12 +228,11 @@ spectry
 
 #### Rights of Way
 
-```{r echo=FALSE, fig.height=4, fig.width=7}
+```{r echo=FALSE, fig.height=4, fig.width=7, warning=FALSE}
 asiaRoW <- asiaRoW[,c(1,2,10:11)]
 asiaRoW <- tidyr::gather(asiaRoW, type, value, 3:4)
 asiaRoW <- dplyr::mutate(asiaRoW, value = value/1000)
 asiaRoW <- asiaRoW %>% filter(Country %in% countries) 
-asiaRoW
 
 ROW <- ggplot(asiaRoW, aes(Country, value)) +
   geom_col(aes(fill=type)) +
@@ -359,7 +357,70 @@ fchart5 <- ggplot(findexChart4, aes(x=reach_perc,
 fchart5
 ```
 
-#### Regional   Health
+### Selected Asian Countries: Health
+
+#### Facet Wrap: IMR & LE at a National Level
+
+```{r echo=FALSE}
+asiaIMR <- wbData %>% 
+  filter(indicatorID == "SP.DYN.IMRT.IN", date %in% c(2012,2013,2014,2015,2016)) %>% 
+  select(country, date, indicatorID, value)
+
+asiaLE <- wbData %>% 
+  filter(indicatorID == "SP.DYN.LE00.IN", date %in% c(2012,2013,2014,2015,2016)) %>% 
+  select(country, date, indicatorID, value)
+
+h1 <- ggplot(asiaIMR, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  #scale_color_brewer(palette = 'Set2') +
+  scale_x_discrete(limits = c('2012', '2013', '2014', '2015', '2016'), expand = c(0,0.5)) +
+  labs(x='Year', y='Infant Mortality Rate (per 1,000 births)') +
+  facet_wrap(. ~ country, scales = "fixed", nrow = 4) +
+  theme_bw() + theme(legend.position = 0)
+h1
+
+h2 <- ggplot(asiaLE, aes(x = date, y = value, color = country)) +
+  geom_line(aes(group = country), size = 1.2) +
+  geom_point() +
+  #scale_color_brewer(palette = 'Set2') +
+  scale_x_discrete(limits = c('2012','2013', '2014', '2015', '2016'), expand = c(0,0.5)) +
+  labs(x='Year', y='Life Expectancy (Years)') +
+  facet_wrap(. ~ country, scales = "fixed", nrow = 4) +
+  theme_bw() + theme(legend.position = 0)
+h2
+```
+
+```{r echo=FALSE,fig.height=4, fig.width=8}
+#Fiber Reach vs. IMRT & LE by Country
+AsiaHealth <- wbData %>% 
+  subset(indicatorID %in% c('SP.DYN.IMRT.IN','SP.DYN.LE00.IN')) %>% 
+  filter(date == '2016') %>% 
+  select(country, indicatorID, value) %>% 
+  spread(indicatorID, value) %>% 
+  left_join(fiberdata, by = 'country')
+AsiaHealth
+#fiberdata
+
+HealthScatter <- ggplot(AsiaHealth, aes(x=reach_perc, y=SP.DYN.IMRT.IN, color=SP.DYN.LE00.IN, label=country)) +
+  geom_point(size=3) +
+  theme_bw() +
+  labs(x="Fiber Reach (% of Population)", y="Infant Mortality Rate \n(Per 1,000 live births)") +
+  scale_color_continuous(name="Life Expectancy \nat Birth \n(Years)") +
+  geom_smooth(method = "lm", se = FALSE, color="grey") +
+  geom_text_repel(color="black") +
+  theme(legend.position = "right")
+  
+HealthScatter
+
+#Populated Places
+populatedPlaces <- populatedPlaces %>% 
+  select(country, iso_a3, type, name, pop_src_yr, within_5km, adm1_name, fib_dist, pop_perc) %>% 
+  filter(iso_a3 %in% countries_iso) %>% 
+  group_by(country) %>% 
+  summarise(fib_dist = sum(fib_dist))
+populatedPlaces
+```
 
 ### Bangladesh
 
@@ -405,11 +466,11 @@ sub2
 
 ##### Facet Wrap Trial
 
-```{r fig.height=2, fig.width=8}
+```{r echo=FALSE, fig.height=2, fig.width=8}
 asiaProviders <- asiaProviders %>%
   rename('Fiber Distance (km)' = 'dist', 'Fiber Reach (% of population)' = 'fr') %>% 
   gather(type, value, 2:3)
-asiaProviders 
+asiaProviders
 
 sub3 <- ggplot(asiaProviders, 
                aes(x=reorder(provider, desc(provider)), y=value, fill=provider), 
@@ -452,7 +513,7 @@ sub5
 
 #### Fiber Reach vs. IMRT by Division
 
-```{r fig.height=4, fig.width=8}
+```{r echo=FALSE, fig.height=4, fig.width=8}
 sub6 <- ggplot(bgdDivision, aes(x=fiber.reach, y=imrt, color=adm1)) +
   geom_point(size=3) +
   geom_smooth(method="auto", se=FALSE, color="grey") +
@@ -462,7 +523,7 @@ sub6
 
 #### IMRT by Division
 
-```{r fig.height=4, fig.width=7}
+```{r echo=FALSE, fig.height=4, fig.width=7}
 bgdChart2 <- ggplot(bgdDivision, aes(x=adm1, y=imrt)) +
   geom_bar(stat="identity", fill='#0D6EB8') +
   theme_bw() +
@@ -494,7 +555,7 @@ sub7
 
 #### Hospital Count by Administrative Layer (bgdHospCt)
 
-```{r fig.height=4, fig.width=7}
+```{r echo=FALSE, fig.height=4, fig.width=7}
 #Remove Irrelevant Columns
 bgdHospCt <- bgdHospCt[,c(3:10)]
 
@@ -542,7 +603,7 @@ b4
 
 #### Hospitals within 5km of Fiber (bgdHospR)
 
-```{r fig.height=3.5, fig.width=7}
+```{r echo=FALSE, fig.height=3.5, fig.width=7}
 #Remove Irrelevant Columns
 
 bDiv1 <- c('Barisal', 'Chittagong', 'Dhaka', 'Khulna', 'Mymensignh', 'Rajshahi', 'Rangpur', 'Sylhet')
@@ -594,7 +655,7 @@ b8
 
 #### bgdAdm3
 
-```{r}
+```{r echo=FALSE}
 #Remove Irrelevant Columns
 bgdAdm3 <- bgdAdm3[,-c(1,2,14)]
 bangladeshAccessPoints1 <- bgdAdm3 %>% group_by(name_1) %>% 
@@ -663,7 +724,7 @@ sub9
 
 #### Fiber Reach vs. MMA
 
-```{r echo=FALSE, fig.height=3.5, fig.width=7}
+```{r echo=FALSE, warning=FALSE, fig.height=3.5, fig.width=7}
 bangladeshAccessPoints1[2,1] = "Chittagong"
 bgdDivision <- bgdDivision %>% spread(type, value) %>% rename('name_1' = 'adm1')
 bangladeshAccessPoints1 <-  bangladeshAccessPoints1 %>% 
@@ -680,13 +741,11 @@ sub10
 ```
 
 
-#### BGD Health 2
+#### BGD Health 2 (Not Used)
 
 ```{r echo=FALSE}
 bgdHealth <- bgdHealth %>% 
   subset(Year == '2014')
-
-bgdHealth
 
 bgdChart <- ggplot(bgdHealth, aes(x=`Subnational.region`, y=Infant.mortality.rate..deaths.per.1000.live.births.)) +
   geom_bar(stat = "identity")
@@ -728,38 +787,7 @@ bfinal2 <- ggplot(bgdFinReach2, aes(x=reorder(adm1_name, desc(adm1_name)), y=val
 bfinal2
 ```
 
-#### National Health (Last Chart Trials)
 
-```{r fig.height=4, fig.width=8}
-#Fiber Reach vs. IMRT & LE by Country
-AsiaHealth <- wbData %>% 
-  subset(indicatorID %in% c('SP.DYN.IMRT.IN','SP.DYN.LE00.IN')) %>% 
-  filter(date == '2016') %>% 
-  select(country, indicatorID, value) %>% 
-  spread(indicatorID, value) %>% 
-  left_join(fiberdata, by = 'country')
-AsiaHealth
-#fiberdata
 
-HealthScatter <- ggplot(AsiaHealth, aes(x=reach_perc, y=SP.DYN.IMRT.IN, color=SP.DYN.LE00.IN, label=country)) +
-  geom_point(size=3) +
-  theme_bw() +
-  labs(x="Fiber Reach (% of Population)", y="Infant Mortality Rate \n(Per 1,000 live births)") +
-  scale_color_continuous(name="Life Expectancy \nat Birth \n(Years)") +
-  geom_smooth(method = "lm", se = FALSE, color="grey") +
-  geom_text_repel(color="black") +
-  theme(legend.position = "right")
-  
-  
-HealthScatter
-
-#Populated Places
-populatedPlaces <- populatedPlaces %>% 
-  select(country, iso_a3, type, name, pop_src_yr, within_5km, adm1_name, fib_dist, pop_perc) %>% 
-  filter(iso_a3 %in% countries_iso) %>% 
-  group_by(country) %>% 
-  summarise(fib_dist = sum(fib_dist))
-populatedPlaces
-```
 
 
