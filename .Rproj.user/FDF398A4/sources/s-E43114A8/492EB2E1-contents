@@ -352,7 +352,7 @@ fchart5 <- ggplot(findexChart4, aes(x=reach_perc,
   geom_point(aes(color=country), size=3) +
   theme_bw() +
   labs(x="Fiber Reach (% of Population)", y="Percentage of Adults w/ a Mobile Account") +
-  geom_smooth(method = 'lm', color = 'grey', se = FALSE) +
+  geom_smooth(method = 'auto', color = 'grey', se = FALSE, span=0.5) +
   scale_color_discrete(name="Country")
 fchart5
 ```

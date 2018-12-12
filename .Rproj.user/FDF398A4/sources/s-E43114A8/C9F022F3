@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544643530286.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C9F022F3",
+    "lastKnownWriteTime" : 1544654404,
+    "last_content_update" : 1544654404270,
+    "path" : "~/investor-data/regulator-dashboard.Rmd",
+    "project_path" : "regulator-dashboard.Rmd",
+    "properties" : {
+        "cursorPosition" : "24,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

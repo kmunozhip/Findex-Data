@@ -1,0 +1,133 @@
+---
+title: 'Regulator Dashboard Charts'
+author: 'Krashaldy Muñoz'
+date: 'December 12, 2018'
+output: html_document
+---
+### Overview
+
+This Dashboard will be divded into 2 main views, Subnatinional and National(with the former coming in first). Regulators will be more interested in subnational Data. A compliance tab might be included in the dashboard at a later date, or it might be a complete separate "view" from the others.
+
+***
+#### Packages
+
+```{r message=FALSE}
+library(openxlsx)
+library(ggplot2)
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(magrittr)
+library(wbstats)
+library(ggrepel)
+library(wesanderson)
+```
+
+#### Countries
+
+```{r message=FALSE}
+countries <- c('Bangladesh', 'Pakistan', 'Sri Lanka', 'Indonesia', 'Vietnam', 'Thailand', 'Malaysia', 'Philippines', 'Cambodia')
+
+countries_iso <- c('BGD', 'PAK', 'LKA', 'IDN', 'VNM', 'THA', 'MYS', 'PHL', 'KHM')
+```
+
+
+### Subnational: Fiber
+
+#### Load Data
+
+```{r message=FALSE}
+bgdPopulated <- read.csv("findex-data/populated_places.csv") %>% 
+  filter(iso_a3 == "BGD") %>% 
+  select(country, iso_a3, name, type, population, src_pop, pop_src_yr, within_5km, adm1_name, fib_dist, pop_perc) %>% 
+  group_by(adm1_name) %>% 
+  summarise(population = sum(population, na.rm = TRUE),
+            fib_dist = sum(fib_dist, na.rm = TRUE)) %>% 
+  subset(adm1_name %in% c("Barisal", "Chittagong", "Dhaka", "Khulna", "Rajshahi", "Rangpur", "Sylhet")) %>% 
+  mutate(reach = (fib_dist/population)*100)
+```
+
+#### Chart
+
+```{r echo=FALSE}
+bgdPopulated
+```
+
+### Subnational: Rights of Way
+
+#### Load Data
+
+```{r message=FALSE}
+asiaRoW <- read.xlsx("findex-data/Asia_RoW.xlsx", 1) %>% 
+  filter(Country %in% countries)
+```
+
+#### Chart
+
+```{r echo=FALSE}
+asiaRoW
+```
+
+### Subnational: Spectrum
+
+#### Load Data
+
+```{r message=FALSE}
+spectrumData <- read.csv("findex-data/spectrum_merged_csv.csv") %>% 
+  filter(iso_a3 %in% countries_iso) %>% 
+  select(country, iso_a3, provider, band_mhz)
+```
+
+#### Chart
+
+```{r echo=FALSE}
+summary(spectrumData)
+str(spectrumData)
+```
+
+
+***
+
+### National: Fiber
+
+#### Load Data
+
+```{r message=FALSE}
+asiaFiber <- read.xlsx("findex-data/Asia_fibreach_dec2018.xlsx", 1) %>% 
+  filter(ctry %in% countries_iso)
+
+asiaPopulation <- wb(country = countries_iso, indicator = c('SP.POP.TOTL'), mrv = 1) %>% 
+  select(iso3c, value) %>% 
+  rename(ctry = 'iso3c', pop = 'value')
+
+asiaReach <- left_join(asiaFiber, asiaPopulation, by="ctry", all=TRUE) %>% 
+  mutate(reach = (`5.km.reach`/pop)*100)
+
+asiaNet <- read.xlsx("findex-data/networks.xlsx", 1) %>% 
+  filter(iso_a3 %in% countries_iso, `fiber?` == "yes") %>% 
+  select(iso_a3, provider.name, `fiber?`, longhaul.km, metro.km, access.km, leased.km, distinct.km.total, indistinct.km.total )
+```
+
+#### Charts
+
+```{r echo=FALSE}
+asiaReach
+#asiaNet
+fiberchart <- ggplot(asiaReach, aes(x=reorder(ctry, dplyr::desc(ctry)), y=reach)) +
+  geom_col(aes(fill=ctry)) +
+  coord_flip() +
+  geom_hline(yintercept=58.38, color='#0D6EB8', size=1.5) +
+  labs(x='Country', y='5km Fiber Reach (% of the Population)') +
+  scale_y_continuous(limits = c(0,90), expand = c(0,0), breaks = c(0,20,40,60,80)) +
+  theme_bw() + scale_fill_brewer(palette="Set1") +
+  theme(legend.position = 0)
+fiberchart
+```
+
+### National: Rights of Way
+
+#### Load Data
+
+#### Chart
+
+### National: Spectrum
