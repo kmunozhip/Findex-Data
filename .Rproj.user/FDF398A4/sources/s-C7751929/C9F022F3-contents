@@ -74,15 +74,17 @@ asiaRoW
 
 ```{r message=FALSE}
 spectrumData <- read.csv("findex-data/spectrum_merged_csv.csv") %>% 
-  filter(iso_a3 %in% countries_iso) %>% 
+  filter(iso_a3 == "BGD") %>% 
   select(country, iso_a3, provider, band_mhz)
 ```
 
 #### Chart
 
 ```{r echo=FALSE}
-summary(spectrumData)
-str(spectrumData)
+spectrumChart <- ggplot(spectrumData, aes(x=provider,y=band_mhz, fill=band_mhz)) +
+  geom_tile(color="grey20") + coord_flip() + scale_fill_manual(values = wes_palette(n=3, "GrandBudapest2")) +
+  theme_bw() + theme(legend.position = 0) + scale_y_discrete(limits = c("900","1800","2100"), expand = c(0,0)) + scale_x_discrete(expand = c(0,0))
+spectrumChart
 ```
 
 
