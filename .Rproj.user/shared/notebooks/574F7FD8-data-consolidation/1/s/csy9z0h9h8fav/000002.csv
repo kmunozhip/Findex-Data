@@ -1,0 +1,5 @@
+"0","bgdHospCt <- read.csv('findex-data/bangladesh - hospital ct.csv')"
+"0","bgdHospR <- read.csv('findex-data/bgd_hosp_within5km.csv')"
+"0","bgdAdm3 <- read.xlsx('findex-data/bgd_adm3.xlsx',1)"
+"0","bgdFinReach <- read.xlsx('findex-data/bgd_fin_reach.xlsx',1)"
+"0","bgdHealth <- read.csv('findex-data/bgd_health2.csv')"

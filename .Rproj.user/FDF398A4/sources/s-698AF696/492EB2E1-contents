@@ -257,6 +257,10 @@ ROW
 ```{r echo=FALSE, fig.height=4, fig.width=8}
 finBase <- subset(finBase, X3 %in% countries)
 #finBase <- finBase[,c(1:29,770:781)]
+
+finRural <- finBase[,c(1:4,17,19,20)]
+str(finRural)
+
 finBase <- finBase[,c(1:4,6,770)]
 findexChart1 <- finBase %>% 
   subset(X1 %in% c('2011', '2014', '2017')) %>%
@@ -264,8 +268,11 @@ findexChart1 <- finBase %>%
          'Mobile.money.account.(%.age.15+)'=`Mobile.money.account.(%.age.15+)`*100)
 
 fchart1 <- ggplot(findexChart1, aes(x=X1, y=`Account.(%.age.15+)`, color=X3)) +
-  geom_point() +
-  geom_line(aes(group=X3), size = 1)
+#  geom_point() +
+  geom_line(aes(group=X3), size = 1) +
+  facet_grid(cols = vars(X3)) +
+  theme_light() +
+  theme(legend.position = 0)
 fchart1
 
 cols <- c('2011'='dodgerblue', '2014'='dodgerblue4', '2017'='black')
@@ -695,18 +702,23 @@ bangladeshAccessPoints1
 totalaccessp <- bangladeshAccessPoints1 %>% 
   mutate(total_ap = no_banks + no_sacco + no_atms + no_mma) %>% 
   select(name_1, no_banks, no_sacco, no_atms, no_mma) %>% 
-  tidyr::gather(type, count, 2:5)
+  tidyr::gather(type, count, 2:5) %>% 
+  mutate(type = replace(type, type == "no_atms", "ATM")) %>% 
+  mutate(type = replace(type, type == "no_banks", "Bank")) %>% 
+  mutate(type = replace(type, type == "no_mma", "MMA")) %>% 
+  mutate(type = replace(type, type == "no_sacco", "SACCO"))
 
 sub8 <- ggplot(totalaccessp, aes(x=reorder(name_1, desc(name_1)), y=count)) +
   geom_col(aes(fill=type)) +
   coord_flip() +
-  scale_fill_manual(values=c('no_atms'='grey60', 
-                             'no_banks'='dodgerblue3',
-                             'no_mma'='dodgerblue4', 
-                             'no_sacco'='black'), name = "Access Point Category") +
-  labs(x = 'Administrative Division', y='Count') +
-  theme_bw() +
-  scale_y_continuous(limits = c(0,17500), expand = c(0,0), breaks = c(0,5000,10000,15000))
+  scale_fill_manual(values=c('ATM'='grey60', 
+                             'Bank'='dodgerblue3',
+                             'MMA'='dodgerblue4', 
+                             'SACCO'='black'), name = "Access Point Type") +
+  labs(x = 'Administrative Division', y='Count', title="Financial Access Point Channel Mix by Region") +
+  theme_classic() +
+  scale_y_continuous(limits = c(0,17500), expand = c(0,0), breaks = c(0,5000,10000,15000)) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA))
 sub8
 ```
 
@@ -724,7 +736,7 @@ sub9
 
 #### Fiber Reach vs. MMA
 
-```{r echo=FALSE, warning=FALSE, fig.height=3.5, fig.width=7}
+```{r echo=FALSE, warning=FALSE, fig.height=3.5, fig.width=6}
 bangladeshAccessPoints1[2,1] = "Chittagong"
 bgdDivision <- bgdDivision %>% spread(type, value) %>% rename('name_1' = 'adm1')
 bangladeshAccessPoints1 <-  bangladeshAccessPoints1 %>% 
@@ -733,10 +745,11 @@ bangladeshAccessPoints1 <-  bangladeshAccessPoints1 %>%
   mutate(no_mma = no_mma/1000)
 
 sub10 <- ggplot(bangladeshAccessPoints1, aes(x=fiber.reach,y=no_mma,color=name_1)) +
-  geom_point(fill="grey", size=4) + theme_bw() +
-  labs(x="Fiber Reach (% of population)", y="Number of Mobile Money Agents \n(in Thousands)") +
-  scale_color_discrete(name="Administrative Division") +
-  geom_smooth(method="lm", color="grey", se=FALSE)
+  geom_point(fill="grey", size=4) + theme_classic() +
+  labs(x="Fiber Reach (% of population)", y="Mobile Money Agent Count \n(in Thousands)") +
+  scale_color_discrete(name="Administrative \nDivision") +
+  geom_smooth(method="lm", color="grey", se=FALSE) +
+  theme(panel.border = element_rect(linetype = "solid", fill = NA))
 sub10
 ```
 
@@ -755,7 +768,7 @@ bgdChart
 
 #### Population within 1km of a bank and/or Mobile Money Agent (bgdFinReach)
   
-```{r echo=FALSE, fig.height=3, fig.width=6}
+```{r echo=FALSE, fig.height=3.5, fig.width=6}
 bgdFinReach1 <- mutate(bgdFinReach,
                       perc_bank = (pop.with.1km.of.bank/total.pop)*100,
                       perc_mma = (pop.with.1km.of.a.mobile.money.agent/total.pop)*100,
@@ -773,21 +786,31 @@ bfinal
 
 bgdFinReach2 <- mutate(bgdFinReach,
                       perc_bank = (pop.with.1km.of.bank/total.pop)*100,
-                      perc_mma = (pop.with.1km.of.a.mobile.money.agent/total.pop)*100)
+                      perc_mma = (pop.with.1km.of.a.mobile.money.agent/total.pop)*100,
+                      adm1_name = replace(adm1_name, adm1_name == "Mymensignh", "Rangpur")) #This is how to replace values
 bgdFinReach2 <- bgdFinReach2 %>% 
   gather(type, value, 5:6) %>% 
-  select(adm1_name, type, value)
+  select(adm1_name, type, value) %>%
+  mutate(type = replace(type, type == "perc_bank", "Bank")) %>% 
+  mutate(type = replace(type, type == "perc_mma", "Mobile Money Agent")) %>% 
+  filter(adm1_name != "Total")
 
 bfinal2 <- ggplot(bgdFinReach2, aes(x=reorder(adm1_name, desc(adm1_name)), y=value, fill=type)) +
   geom_bar(stat="identity", position=position_dodge()) +
   coord_flip() +
-  labs(x='Country',y='% of Population') + theme_bw() +
+  labs(x='Administrative Division', 
+       y='Population (%)',
+       title = "Population within 1km of Access Point") + theme_classic() +
   scale_y_continuous(limits = c(0,50), expand = c(0,0), breaks = c(0,10,20,30,40)) +
-  scale_fill_manual(name="Access Point Type", values = c("grey",'#0D6EB8'))
+  scale_fill_manual(name="Access Point Type", values = c("grey",'#0D6EB8')) +
+  theme(panel.border = element_rect(linetype = "solid", fill=NA)) #+
+#  geom_hline(yintercept = 18.4, linetype = "dashed") +
+#  geom_hline(yintercept = 33.7, linetype = "solid", color = "black")
 bfinal2
+sub8
 ```
 
-
+### WorldBank vs Findex Data on Countries with the least Financial Inclusion
 
 
 

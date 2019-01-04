@@ -1,0 +1,7 @@
+"0","asiaPopulation <- wbData %>% filter(indicatorID == 'SP.POP.TOTL', date == '2017')"
+"0","fiberdata <- asiaFibreach %>% filter(ctry %in% countries_iso)"
+"0","fiberdata <- merge(fiberdata, asiaPopulation, by.x = 'ctry', by.y = 'iso3c', all = TRUE)"
+"0","fiberdata <- select(fiberdata, country, `5.km.reach`, value)"
+"0","fiberdata <- data.frame(region = 'asia', reach = sum(fiberdata$`5.km.reach`), pop = sum(fiberdata$value)) "
+"0","fiberdata <- dplyr::mutate(fiberdata, 'reach.%' = (reach/pop)*100)"
+"0","fiberdata"
