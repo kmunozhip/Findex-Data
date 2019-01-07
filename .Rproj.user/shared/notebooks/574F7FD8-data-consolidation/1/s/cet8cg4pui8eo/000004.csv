@@ -1,6 +1,0 @@
-"0","p4 <- ggplot(asiafbfr, aes(reach_perc, value)) +"
-"0","  geom_point(aes(color=country), size=4) +"
-"0","  geom_smooth(method = lm, se = FALSE, color='grey') +"
-"0","  labs(x = 'Fiber Reach (% of Population)', y = 'FB Subscriptions (Per 100 people)') +"
-"0","  theme_bw()"
-"0","p4"

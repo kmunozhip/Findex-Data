@@ -1,0 +1,13 @@
+"0","bfinal2 <- ggplot(bgdFinReach2, aes(x=reorder(adm1_name, desc(adm1_name)), y=value, fill=type)) +
+  geom_bar(stat=""identity"", position=position_dodge()) +
+  coord_flip() +
+  labs(x='Administrative Division', 
+       y='Population (%)',
+       title = ""Population within 1km of Access Point"") + theme_classic() +
+  scale_y_continuous(limits = c(0,50), expand = c(0,0), breaks = c(0,10,20,30,40)) +
+  scale_fill_manual(name=""Access Point Type"", values = c(""grey"",'#0D6EB8')) +
+  theme(panel.border = element_rect(linetype = ""solid"", fill=NA)) #+
+"
+"2","Error in ggplot(bgdFinReach2, aes(x = reorder(adm1_name, desc(adm1_name)),  : 
+  could not find function ""ggplot""
+"

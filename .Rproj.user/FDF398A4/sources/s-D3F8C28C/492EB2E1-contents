@@ -258,8 +258,8 @@ ROW
 finBase <- subset(finBase, X3 %in% countries)
 #finBase <- finBase[,c(1:29,770:781)]
 
-finRural <- finBase[,c(1:4,17,19,20)]
-str(finRural)
+finRural <- finBase[,c(1:4,6,17,18,29,770,781)]
+#str(finRural)
 
 finBase <- finBase[,c(1:4,6,770)]
 findexChart1 <- finBase %>% 
@@ -812,5 +812,33 @@ sub8
 
 ### WorldBank vs Findex Data on Countries with the least Financial Inclusion
 
+#### Findex Data:
+```{r echo=FALSE, fig.height=5, fig.width=8}
+str(finRural)
+finRuralMobile <- finRural %>% select(X1, X3, 9:10) %>% 
+  gather("Account Type", "Value", 3:4)
+
+
+finRuralAccount <- finRural %>% select(X1, X3, 5:6) %>% 
+  gather("Account Type", "Value", 3:4)
+
+#finRural <- finRural %>% gather("Account Type", "Value", 5:10)
+
+
+
+bfinal3 <- ggplot(finRuralMobile, aes(x=X1, y=Value, color=`Account Type`)) +
+  geom_line() +
+  facet_grid(cols = vars(X3)) +
+  theme(legend.position = "bottom") +
+  scale_x_continuous(limits = c(2013,2018), expand = c(0,0), breaks = c(2014, 2017))
+bfinal3
+
+bfinal4 <- ggplot(finRuralAccount, aes(x=X1, y=Value, color=`Account Type`)) +
+  geom_line() +
+  facet_grid(cols = vars(X3)) +
+  theme(legend.position = "bottom") +
+  scale_x_continuous(limits = c(2011, 2017), expand = c(0,0), breaks = c(2011, 2014, 2017))
+bfinal4
+```
 
 

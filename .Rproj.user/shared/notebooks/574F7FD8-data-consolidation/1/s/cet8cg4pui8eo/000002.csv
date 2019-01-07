@@ -1,5 +1,0 @@
-"0","fiberdata <- fiberdata[,c(1,4)]"
-"0","asiafbfr <- merge(fiberdata, asiaBroadband, by.x = ""country"", by.y = ""country"", all.x = TRUE)"
-"0","asiafbfr <- asiafbfr %>% filter (date == '2016')"
-"0","asiafbfr <- asiafbfr[,c(1,2,5)]"
-"0","asiafbfr"

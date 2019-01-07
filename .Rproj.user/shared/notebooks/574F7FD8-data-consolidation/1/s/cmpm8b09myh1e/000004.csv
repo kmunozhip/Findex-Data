@@ -1,8 +1,0 @@
-"0","cols <- c('2011'='dodgerblue', '2014'='dodgerblue4', '2017'='black')"
-"0","fchart2 <- ggplot(findexChart1, aes(x=X3, y=`Account.(%.age.15+)`)) +"
-"0","  geom_col(aes(group = factor(X1), fill = factor(X1)), position = ""dodge"") +"
-"0","  scale_fill_manual(values = cols, name = 'Year') +"
-"0","  labs(x = 'Country', y = 'Adults with an account (% of Population)', title = 'Adults with an account by country') +"
-"0","  theme_bw() +"
-"0","  scale_y_continuous(expand = c(0,0), limits = c(0, 90), breaks = c(0, 20, 40, 60, 80))"
-"0","fchart2"
