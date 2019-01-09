@@ -715,7 +715,7 @@ sub8 <- ggplot(totalaccessp, aes(x=reorder(name_1, desc(name_1)), y=count)) +
                              'Bank'='dodgerblue3',
                              'MMA'='dodgerblue4', 
                              'SACCO'='black'), name = "Access Point Type") +
-  labs(x = 'Administrative Division', y='Count', title="Financial Access Point Channel Mix by Region") +
+  labs(x = 'Administrative Division', y='Count', title="Financial Access Point Channel Mix by Region (Chart 1)") +
   theme_classic() +
   scale_y_continuous(limits = c(0,17500), expand = c(0,0), breaks = c(0,5000,10000,15000)) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA))
@@ -746,7 +746,9 @@ bangladeshAccessPoints1 <-  bangladeshAccessPoints1 %>%
 
 sub10 <- ggplot(bangladeshAccessPoints1, aes(x=fiber.reach,y=no_mma,color=name_1)) +
   geom_point(fill="grey", size=4) + theme_classic() +
-  labs(x="Fiber Reach (% of population)", y="Mobile Money Agent Count \n(in Thousands)") +
+  labs(x="Fiber Reach (% of population)",
+       y="Mobile Money Agent Count \n(in Thousands)",
+       title = "Fiber reach vs. MMA (Chart 3)") +
   scale_color_discrete(name="Administrative \nDivision") +
   geom_smooth(method="lm", color="grey", se=FALSE) +
   theme(panel.border = element_rect(linetype = "solid", fill = NA))
@@ -800,7 +802,7 @@ bfinal2 <- ggplot(bgdFinReach2, aes(x=reorder(adm1_name, desc(adm1_name)), y=val
   coord_flip() +
   labs(x='Administrative Division', 
        y='Population (%)',
-       title = "Population within 1km of Access Point") + theme_classic() +
+       title = "Population within 1km of Access Point (Chart 2)") + theme_classic() +
   scale_y_continuous(limits = c(0,50), expand = c(0,0), breaks = c(0,10,20,30,40)) +
   scale_fill_manual(name="Access Point Type", values = c("grey",'#0D6EB8')) +
   theme(panel.border = element_rect(linetype = "solid", fill=NA)) #+
